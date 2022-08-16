@@ -175,9 +175,11 @@ components:
           type: integer
         background:
           type: integer
-        accessory:
-          type: integer
         glasses:
+          type: integer
+        face:
+          type: integer
+        ear:
           type: integer
     NormalizedNoun:
       type: object

@@ -10,12 +10,11 @@ interface NounToken {
 }
 
 export interface INounSeed {
-  accessory: number;
   background: number;
   body: number;
-  glasses: number;
-  head: number;
   ear: number;
+  head: number;
+  glasses: number;
   face: number;
 }
 
