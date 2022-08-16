@@ -15,6 +15,8 @@ export interface INounSeed {
   body: number;
   glasses: number;
   head: number;
+  ear: number;
+  face: number;
 }
 
 export enum NounsTokenContractFunction {
@@ -55,7 +57,7 @@ export const useNounSeed = (nounId: EthersBN) => {
 export const useBigNounSeed = (nounId: EthersBN) => {
   const seed = useContractCall<INounSeed>({
     abi,
-    address: "0x9C8fF314C9Bc7F6e59A9d9225Fb22946427eDC03",
+    address: '0x9C8fF314C9Bc7F6e59A9d9225Fb22946427eDC03',
     method: 'seeds',
     args: [nounId],
   });
@@ -113,11 +115,9 @@ export const useDelegateVotes = () => {
 };
 
 export const useNounTokenBalance = (address: string | undefined): number | undefined => {
-
-
   //  const { account } = useEthers();
 
-    const [tokenBalance] =
+  const [tokenBalance] =
     useContractCall<[EthersBN]>({
       abi,
       address: config.addresses.nounsToken,
@@ -125,6 +125,5 @@ export const useNounTokenBalance = (address: string | undefined): number | undef
       args: [address],
     }) || [];
 
-    return tokenBalance?.toNumber();
-
+  return tokenBalance?.toNumber();
 };

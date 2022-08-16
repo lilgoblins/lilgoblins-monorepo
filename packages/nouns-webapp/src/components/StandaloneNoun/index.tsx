@@ -1,4 +1,4 @@
-import { ImageData as data, getNounData, getBigNounData, BigNounImageData as bigNounData } from '@nouns/assets';
+import { ImageData as data, getNounData } from '@nouns/assets';
 import { buildSVG } from '@nouns/sdk';
 import { BigNumber, BigNumber as EthersBN } from 'ethers';
 import { INounSeed, useBigNounSeed, useNounSeed } from '../../wrappers/nounToken';
@@ -29,23 +29,6 @@ const getNoun = (nounId: string | EthersBN | number, seed: INounSeed) => {
   const description = `Lil Noun ${id} is a member of the Lil Goblins DAO`;
   const { parts, background } = getNounData(seed);
   const svg = buildSVG(parts, data.palette, background);
-  const image = `data:image/svg+xml;base64,${btoa(svg)}`;
-
-  return {
-    name,
-    svg,
-    description,
-    image,
-    parts,
-  };
-};
-
-const getBigNoun = (nounId: string | EthersBN | number, seed: INounSeed) => {
-  const id = nounId.toString();
-  const name = `Noun ${id}`;
-  const description = `Noun ${id} is a member of the Nouns DAO`;
-  const { parts, background } = getBigNounData(seed);
-  const svg = buildSVG(parts, bigNounData.palette, background);
   const image = `data:image/svg+xml;base64,${btoa(svg)}`;
 
   return {
@@ -174,8 +157,8 @@ export const StandaloneBigNounCircular: React.FC<StandaloneCircularNounProps> = 
   props: StandaloneCircularNounProps,
 ) => {
   const { nounId } = props;
-  const seed = useBigNounSeed(nounId);
-  const noun = seed && getBigNoun(nounId, seed);
+  // const seed = useBigNounSeed(nounId);
+  // const noun = seed && getBigNoun(nounId, seed);
 
   const dispatch = useDispatch();
   const onClickHandler = () => {
@@ -186,8 +169,8 @@ export const StandaloneBigNounCircular: React.FC<StandaloneCircularNounProps> = 
     <a target="_blank" href={'https://nouns.wtf/noun/' + nounId.toString()}>
       <Noun
         isBigNoun={true}
-        imgPath={noun ? noun.image : ''}
-        alt={noun ? noun.description : 'Lil Noun'}
+        imgPath={''}
+        alt={'Lil Noun'}
         wrapperClassName={nounClasses.circularNounWrapper}
         className={nounClasses.circular}
       />

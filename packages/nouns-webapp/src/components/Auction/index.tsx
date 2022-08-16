@@ -16,6 +16,7 @@ import {
   setPrevOnDisplayAuctionNounId,
 } from '../../state/slices/onDisplayAuction';
 import { beige, grey } from '../../utils/nounBgColors';
+import BG from './BG';
 
 interface AuctionProps {
   auction?: IAuction;
@@ -83,8 +84,14 @@ const Auction: React.FC<AuctionProps> = props => {
   return (
     <div style={{ backgroundColor: stateBgColor }} className={classes.wrapper}>
       <Container fluid="xl">
+        <div className={classes.desktop}>
+          <BG />
+        </div>
         <Row>
           <Col lg={{ span: 6 }} className={classes.nounContentCol}>
+            <div className={classes.mobile}>
+              <BG />
+            </div>
             {currentAuction ? nounContent : loadingNoun}
           </Col>
           <Col lg={{ span: 6 }} className={classes.auctionActivityCol}>
