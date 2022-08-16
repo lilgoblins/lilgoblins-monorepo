@@ -60,7 +60,7 @@ const NounderNounContent: React.FC<{
           <DocLink to="/vote" className={nounContentClasses.link}>
             Lil Goblins DAO
           </DocLink>
-          . For this reason, we, the project's founders (‘Lil Nounders’) have chosen to compensate
+          . For this reason, we, the project's founders (‘Lil Goblin Kings') have chosen to compensate
           ourselves with Lil Nouns. Every 10th Lil Noun for the first 5 years of the project will be
           sent to our multisig, where it will be vested and distributed to individual Nounders.
         </li>
@@ -68,25 +68,25 @@ const NounderNounContent: React.FC<{
     );
   }
 
-  if (nounIdNumber % 10 === 1) {
-    isNoundersNoun = false
-    isNounsDAONoun = true
+  // if (nounIdNumber % 10 === 1) {
+  //   isNoundersNoun = false
+  //   isNounsDAONoun = true
 
-    block = (
-      <ul className={auctionBidClasses.bidCollection}>
-        <li
-          className={
-            (isCool ? `${auctionBidClasses.bidRowCool}` : `${auctionBidClasses.bidRowWarm}`) +
-            ` ${nounContentClasses.bidRow}`
-          }
-        >
-          As a thank you to the {nounsDao} for being selfless stewards of cc0 we, the project's founders (‘Lil Nounders’) have chosen to compensate
-          the NounsDAO with Lil Nouns. Every 11th Lil Noun for the first 5 years of the project will be
-          sent to the NounsDAO, where they'll be distributed to individual Nouns, Nounders, and community members alike.
-        </li>
-      </ul>
-    );
-  }
+  //   block = (
+  //     <ul className={auctionBidClasses.bidCollection}>
+  //       <li
+  //         className={
+  //           (isCool ? `${auctionBidClasses.bidRowCool}` : `${auctionBidClasses.bidRowWarm}`) +
+  //           ` ${nounContentClasses.bidRow}`
+  //         }
+  //       >
+  //         As a thank you to the {nounsDao} for being selfless stewards of cc0 we, the project's founders (‘Lil Nounders’) have chosen to compensate
+  //         the NounsDAO with Lil Nouns. Every 11th Lil Noun for the first 5 years of the project will be
+  //         sent to the NounsDAO, where they'll be distributed to individual Nouns, Nounders, and community members alike.
+  //       </li>
+  //     </ul>
+  //   );
+  // }
 
   return (
     <AuctionActivityWrapper>
