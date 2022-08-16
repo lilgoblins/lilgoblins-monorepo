@@ -1,6 +1,6 @@
 import { useAppSelector } from '../../hooks';
 import classes from './NavBar.module.css';
-import logo from '../../assets/logo.svg';
+import logo from '../../assets/logo.gif';
 import logoAlternate from '../../assets/logo_alternate.svg';
 import { useEtherBalance } from '@usedapp/core';
 import { useHistory } from 'react-router';
@@ -39,7 +39,8 @@ const NavBar = () => {
       history.location.pathname.includes('/lilnoun/') ||
       history.location.pathname.includes('/auction/');
 
-  const navLogo = useStateBg ? logo : logoAlternate;
+  // const navLogo = useStateBg ? logo : logoAlternate;
+  const navLogo = logo;
 
   const nonWalletButtonStyle = !useStateBg
     ? NavBarButtonStyle.WHITE_INFO

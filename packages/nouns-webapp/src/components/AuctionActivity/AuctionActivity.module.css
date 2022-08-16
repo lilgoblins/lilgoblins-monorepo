@@ -60,13 +60,13 @@ h4 {
 }
 
 .section h4 {
-  font-family: 'PT Root UI';
+  font-family: 'Blue Goblet';
   font-size: 17px;
   line-height: 25px;
 }
 
 .section h2 {
-  font-family: 'PT Root UI';
+  font-family: 'Blue Goblet';
   font-weight: bold;
   font-size: 32px;
 }
@@ -116,7 +116,7 @@ h4 {
 
 .fomoNounsLink a,
 .fomoNounsLink:active a {
-  font-family: 'PT Root UI', sans-serif;
+  font-family: 'Blue Goblet', sans-serif;
   font-weight: 500;
   padding-left: 0.5rem;
   text-decoration: none;

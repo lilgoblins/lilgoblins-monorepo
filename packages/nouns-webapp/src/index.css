@@ -10,27 +10,31 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
-/* Load custom fonts */
 @font-face {
-  font-family: 'Londrina Solid';
+  font-family: 'Blue Goblet';
+  src: url(./fonts/BlueGoblet/BlueGoblet-Regular.otf) format('opentype');
+}
+/* Load custom fonts */
+/* @font-face {
+  font-family: 'Blue Goblet';
   src: url(./fonts/Londrina_Solid/LondrinaSolid-Black.ttf);
   src: url(./fonts/Londrina_Solid/LondrinaSolid-Regular.ttf);
-}
-@font-face {
-  font-family: 'PT Root UI';
+} */
+/* @font-face {
+  font-family: 'Blue Goblet';
   src: url(./fonts/PT_Root_UI/PT-Root-UI_Regular.woff2) format('woff2'),
     url(./fonts/PT_Root_UI/PT-Root-UI_Regular.woff) format('woff');
 }
 @font-face {
-  font-family: 'PT Root UI';
+  font-family: 'Blue Goblet';
   font-weight: 500;
   src: url(./fonts/PT_Root_UI/PT-Root-UI_Medium.woff2) format('woff2'),
     url(./fonts/PT_Root_UI/PT-Root-UI_Medium.woff) format('woff');
 }
 
 @font-face {
-  font-family: 'PT Root UI';
+  font-family: 'Blue Goblet';
   font-weight: bold;
   src: url(./fonts/PT_Root_UI/PT-Root-UI_Bold.woff2) format('woff2'),
     url(./fonts/PT_Root_UI/PT-Root-UI_Bold.woff) format('woff');
-}
+} */

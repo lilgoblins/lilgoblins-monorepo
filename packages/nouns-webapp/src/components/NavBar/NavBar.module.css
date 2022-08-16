@@ -11,7 +11,7 @@
 
 .navBarLogo {
   width: 135px;
-  height: 135px;
+  height: auto;
 }
 
 .navBarCustom {
@@ -44,7 +44,7 @@
 
 .disconnectBtn {
   cursor: pointer;
-  font-family: 'PT Root UI';
+  font-family: 'Blue Goblet';
   font-weight: bold;
 }
 
@@ -69,7 +69,7 @@
 .nounsNavLink,
 .nounsNavLink:active,
 .nounsNavLink:visited {
-  font-family: 'PT Root UI';
+  font-family: 'Blue Goblet';
   font-weight: bold;
   font-size: 0.9rem;
   padding: 0.3rem 0.3rem !important;

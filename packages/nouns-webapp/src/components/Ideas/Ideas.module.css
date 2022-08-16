@@ -1,5 +1,5 @@
 .heading {
-  font-family: 'Londrina Solid';
+  font-family: 'Blue Goblet';
   font-size: 40px;
   margin: 0 !important;
 }
@@ -56,7 +56,7 @@
   border-radius: 16px;
   background: #f4f4f8;
   font-size: 22px;
-  font-family: 'PT Root UI';
+  font-family: 'Blue Goblet';
   font-weight: bold;
   flex-direction: column;
 }
@@ -91,7 +91,7 @@
   margin-top: 0.9rem;
   margin-bottom: 0.9rem;
   margin-right: 1rem;
-  font-family: 'PT Root UI';
+  font-family: 'Blue Goblet';
   font-weight: 500;
   color: var(--brand-gray-light-text);
   font-size: 16px;
@@ -151,7 +151,7 @@
 }
 
 .sortSelect {
-  border: 1px solid #E2E2E2;
+  border: 1px solid #e2e2e2;
   border-radius: 10px;
   font-size: 16px;
   font-weight: bold;
@@ -164,7 +164,7 @@
 }
 
 .likeSpan {
-  font-family: 'PT Root UI';
+  font-family: 'Blue Goblet';
   color: var(--brand-gray-light-text);
 }
 
@@ -180,7 +180,7 @@
   flex-direction: row;
   width: 100%;
   padding: 8px;
-  font-family: 'PT Root UI';
+  font-family: 'Blue Goblet';
   font-size: 16px;
 }
 
@@ -194,7 +194,7 @@
   background: white;
   padding: 8px;
   font-size: 15px;
-  font-family: 'PT Root UI';
+  font-family: 'Blue Goblet';
   font-weight: 500;
   color: var(--brand-gray-light-text);
   font-size: 16px;

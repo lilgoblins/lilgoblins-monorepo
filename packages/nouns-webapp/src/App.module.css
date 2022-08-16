@@ -11,12 +11,12 @@
 .alertButton {
   width: 60%;
   height: 3rem;
-  
+
   /* color: white; */
   border: transparent;
   background-color: var(--brand-black);
   font-weight: bold;
-  font-family: 'PT Root UI';
+  font-family: 'Blue Goblet';
   font-size: 18px;
   border-radius: 10px;
 }
@@ -32,7 +32,7 @@
 }
 
 .buttonRow {
-  font-family: 'PT Root UI';
+  font-family: 'Blue Goblet';
   font-weight: 500;
   padding-bottom: 0.5rem;
   padding-top: 0.5rem;
@@ -42,7 +42,7 @@
 
 .buttonRowText {
   padding-left: 4;
-  font-family: 'PT Root UI';
+  font-family: 'Blue Goblet';
   font-family: bold;
 }
 

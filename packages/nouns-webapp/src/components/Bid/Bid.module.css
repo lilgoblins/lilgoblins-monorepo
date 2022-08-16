@@ -7,7 +7,7 @@
 }
 
 .bidBtn {
-  font-family: 'PT Root UI';
+  font-family: 'Blue Goblet';
   border-radius: 12px !important;
   margin-left: 0.6rem !important;
   margin-top: 3px;
@@ -58,7 +58,7 @@
   background-color: white;
   outline: none !important;
   box-shadow: none !important;
-  font-family: 'PT Root UI';
+  font-family: 'Blue Goblet';
   font-weight: bold;
   font-size: 25px;
   transition: all 0.2s ease-in-out;
@@ -71,7 +71,7 @@
 
 .customPlaceholder {
   color: var(--brand-cool-light-text);
-  font-family: 'PT Root UI';
+  font-family: 'Blue Goblet';
   font-weight: bold;
   z-index: 3;
   user-select: none;
@@ -83,7 +83,7 @@
   top: 15%;
   left: 3%;
   color: var(--brand-cool-light-text);
-  font-family: 'PT Root UI';
+  font-family: 'Blue Goblet';
   font-weight: bold;
   font-size: 25px;
   z-index: 1;
@@ -103,7 +103,7 @@
   border: transparent;
   background-color: var(--brand-black);
   font-weight: bold;
-  font-family: 'PT Root UI';
+  font-family: 'Blue Goblet';
   font-size: 18px;
   border-radius: 10px;
 }
@@ -192,15 +192,15 @@
   text-decoration: none;
   color: rgb(95, 95, 95);
   opacity: 1;
-} 
+}
 
 .headerWrapper h1 {
-  font-family: 'Londrina Solid';
+  font-family: 'Blue Goblet';
   font-size: 4rem;
 }
 
 .headerWrapper p {
-  font-family: 'PT Root UI', sans-serif;
+  font-family: 'Blue Goblet', sans-serif;
   font-weight: 500;
   letter-spacing: -0.25px;
   line-height: 28px;
@@ -208,7 +208,7 @@
 }
 
 .accordionItem {
-  font-family: 'PT Root UI', sans-serif;
+  font-family: 'Blue Goblet', sans-serif;
   font-weight: 500;
   letter-spacing: -0.25px;
   line-height: 28px;
@@ -231,7 +231,7 @@
 }
 
 .nounInfoRow {
-  font-family: 'PT Root UI';
+  font-family: 'Blue Goblet';
   font-weight: 500;
   padding-bottom: 0.5rem;
   padding-top: 0.5rem;
@@ -241,7 +241,7 @@
 
 .nounInfoRowText {
   padding-left: 4;
-  font-family: 'PT Root UI';
+  font-family: 'Blue Goblet';
   font-family: bold;
   color: rgb(95, 95, 95);
 }

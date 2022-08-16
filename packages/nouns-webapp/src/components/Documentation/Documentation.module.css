@@ -1,10 +1,10 @@
 .headerWrapper h1 {
-  font-family: 'Londrina Solid';
+  font-family: 'Blue Goblet';
   font-size: 4rem;
 }
 
 .headerWrapper p {
-  font-family: 'PT Root UI', sans-serif;
+  font-family: 'Blue Goblet', sans-serif;
   font-weight: 500;
   letter-spacing: -0.25px;
   line-height: 28px;
@@ -12,7 +12,7 @@
 }
 
 .accordionItem {
-  font-family: 'PT Root UI', sans-serif;
+  font-family: 'Blue Goblet', sans-serif;
   font-weight: 500;
   letter-spacing: -0.25px;
   line-height: 28px;
@@ -46,7 +46,7 @@
 .accordionHeader button {
   border: none;
   background-color: transparent;
-  font-family: 'Londrina Solid';
+  font-family: 'Blue Goblet';
   font-size: 2.5rem !important;
   cursor: pointer;
   line-height: normal;

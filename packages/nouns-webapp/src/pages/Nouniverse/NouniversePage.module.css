@@ -1,9 +1,8 @@
 .nounersPage h1,
 .nounersPage h2,
 .nounersPage h3 {
-  font-family: 'Londrina Solid';
+  font-family: 'Blue Goblet';
 }
-
 
 /* .nounersPage h2 {
   margin-bottom: 2rem;
@@ -62,7 +61,7 @@
 .cardHeader {
   border: none;
   background-color: transparent;
-  font-family: 'Londrina Solid';
+  font-family: 'Blue Goblet';
   font-size: 2.5rem;
   cursor: pointer;
 }
@@ -83,24 +82,24 @@
 .headerRow span {
   color: #8c8d92;
   font-size: 24px;
-  font-family: 'Londrina Solid';
+  font-family: 'Blue Goblet';
 }
 
 .headerRow h1 {
   color: #14161b;
   font-size: 56px;
-  font-family: 'Londrina Solid';
+  font-family: 'Blue Goblet';
 }
 
 .subheading {
   color: var(--brand-dark-green);
-  font-family: 'PT Root UI';
+  font-family: 'Blue Goblet';
   font-weight: 500;
   font-size: 1.2rem;
 }
 
 .boldText {
-  font-family: 'PT Root UI';
+  font-family: 'Blue Goblet';
   font-weight: bold;
 }
 
@@ -119,7 +118,6 @@ p {
   text-align: right;
   padding-top: 0.8rem;
 }
-
 
 .generateBtn {
   max-width: 15rem;
@@ -165,9 +163,8 @@ p {
 @media (max-width: 992px) {
   .verifyButtonWrapper {
     text-align: center;
-    width :fit-content;
+    width: fit-content;
   }
-
 }
 
 .treasuryInfoText {
@@ -175,7 +172,7 @@ p {
   padding-bottom: 1rem;
   padding-left: 2rem;
   padding-right: 2rem;
-  font-family: 'PT Root UI';
+  font-family: 'Blue Goblet';
   font-weight: 500;
 }
 
