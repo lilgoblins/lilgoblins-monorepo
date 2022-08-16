@@ -1,9 +1,10 @@
 export interface NounSeed {
   background: number;
   body: number;
-  accessory: number;
+  ear: number;
   head: number;
   glasses: number;
+  face: number;
 }
 
 export interface EncodedImage {

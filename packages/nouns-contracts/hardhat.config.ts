@@ -24,11 +24,11 @@ const config: HardhatUserConfig = {
   },
   networks: {
     mainnet: {
-      url: `https://mainnet.infura.io/v3/${process.env.INFURA_PROJECT_ID}`,
+      url: `https://eth-mainnet.g.alchemy.com/v2/06ijGb0mR4IObNvIRJLK_jQqla4hPpK8`,
       accounts: [process.env.WALLET_PRIVATE_KEY!].filter(Boolean),
     },
-    rinkeby: {
-      url: `https://rinkeby.infura.io/v3/${process.env.INFURA_PROJECT_ID}`,
+    goerli: {
+      url: `https://eth-goerli.g.alchemy.com/v2/jaRtCYSC-PW2O8qOVRoBb9or5uIalk1_`,
       accounts: process.env.MNEMONIC
         ? { mnemonic: process.env.MNEMONIC }
         : [process.env.WALLET_PRIVATE_KEY!].filter(Boolean),

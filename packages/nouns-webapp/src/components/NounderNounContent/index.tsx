@@ -58,7 +58,7 @@ const NounderNounContent: React.FC<{
         >
           All Noun auction proceeds are sent to the{' '}
           <DocLink to="/vote" className={nounContentClasses.link}>
-            Lil Nouns DAO
+            Lil Goblins DAO
           </DocLink>
           . For this reason, we, the project's founders (‘Lil Nounders’) have chosen to compensate
           ourselves with Lil Nouns. Every 10th Lil Noun for the first 5 years of the project will be

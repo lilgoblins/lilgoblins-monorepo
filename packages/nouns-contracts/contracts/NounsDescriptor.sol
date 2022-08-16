@@ -49,14 +49,17 @@ contract NounsDescriptor is INounsDescriptor, Ownable {
     // Noun Bodies (Custom RLE)
     bytes[] public override bodies;
 
-    // Noun Accessories (Custom RLE)
-    bytes[] public override accessories;
+    // Noun Ears (Custom RLE)
+    bytes[] public override ears;
 
     // Noun Heads (Custom RLE)
     bytes[] public override heads;
 
     // Noun Glasses (Custom RLE)
     bytes[] public override glasses;
+
+    // Noun Faces (Custom RLE)
+    bytes[] public override faces;
 
     /**
      * @notice Require that the parts have not been locked.
@@ -81,10 +84,10 @@ contract NounsDescriptor is INounsDescriptor, Ownable {
     }
 
     /**
-     * @notice Get the number of available Noun `accessories`.
+     * @notice Get the number of available Noun `ears`.
      */
-    function accessoryCount() external view override returns (uint256) {
-        return accessories.length;
+    function earCount() external view override returns (uint256) {
+        return ears.length;
     }
 
     /**
@@ -99,6 +102,13 @@ contract NounsDescriptor is INounsDescriptor, Ownable {
      */
     function glassesCount() external view override returns (uint256) {
         return glasses.length;
+    }
+
+    /**
+     * @notice Get the number of available Noun `faces`.
+     */
+    function faceCount() external view override returns (uint256) {
+        return faces.length;
     }
 
     /**
@@ -133,12 +143,12 @@ contract NounsDescriptor is INounsDescriptor, Ownable {
     }
 
     /**
-     * @notice Batch add Noun accessories.
+     * @notice Batch add Noun ears.
      * @dev This function can only be called by the owner when not locked.
      */
-    function addManyAccessories(bytes[] calldata _accessories) external override onlyOwner whenPartsNotLocked {
-        for (uint256 i = 0; i < _accessories.length; i++) {
-            _addAccessory(_accessories[i]);
+    function addManyEars(bytes[] calldata _ears) external override onlyOwner whenPartsNotLocked {
+        for (uint256 i = 0; i < _ears.length; i++) {
+            _addEar(_ears[i]);
         }
     }
 
@@ -159,6 +169,16 @@ contract NounsDescriptor is INounsDescriptor, Ownable {
     function addManyGlasses(bytes[] calldata _glasses) external override onlyOwner whenPartsNotLocked {
         for (uint256 i = 0; i < _glasses.length; i++) {
             _addGlasses(_glasses[i]);
+        }
+    }
+
+    /**
+     * @notice Batch add Noun faces.
+     * @dev This function can only be called by the owner when not locked.
+     */
+    function addManyFaces(bytes[] calldata _faces) external override onlyOwner whenPartsNotLocked {
+        for (uint256 i = 0; i < _faces.length; i++) {
+            _addFace(_faces[i]);
         }
     }
 
@@ -188,11 +208,11 @@ contract NounsDescriptor is INounsDescriptor, Ownable {
     }
 
     /**
-     * @notice Add a Noun accessory.
+     * @notice Add a Noun ear.
      * @dev This function can only be called by the owner when not locked.
      */
-    function addAccessory(bytes calldata _accessory) external override onlyOwner whenPartsNotLocked {
-        _addAccessory(_accessory);
+    function addEar(bytes calldata _ear) external override onlyOwner whenPartsNotLocked {
+        _addEar(_ear);
     }
 
     /**
@@ -209,6 +229,14 @@ contract NounsDescriptor is INounsDescriptor, Ownable {
      */
     function addGlasses(bytes calldata _glasses) external override onlyOwner whenPartsNotLocked {
         _addGlasses(_glasses);
+    }
+
+    /**
+     * @notice Add a Noun face.
+     * @dev This function can only be called by the owner when not locked.
+     */
+    function addFace(bytes calldata _face) external override onlyOwner whenPartsNotLocked {
+        _addFace(_face);
     }
 
     /**
@@ -262,7 +290,7 @@ contract NounsDescriptor is INounsDescriptor, Ownable {
     function dataURI(uint256 tokenId, INounsSeeder.Seed memory seed) public view override returns (string memory) {
         string memory nounId = tokenId.toString();
         string memory name = string(abi.encodePacked('Lil Noun ', nounId));
-        string memory description = string(abi.encodePacked('Lil Noun ', nounId, ' is a member of the Lil Nouns DAO'));
+        string memory description = string(abi.encodePacked('Lil Noun ', nounId, ' is a member of the Lil Goblins DAO'));
 
         return genericDataURI(name, description, seed);
     }
@@ -317,10 +345,10 @@ contract NounsDescriptor is INounsDescriptor, Ownable {
     }
 
     /**
-     * @notice Add a Noun accessory.
+     * @notice Add a Noun ear.
      */
-    function _addAccessory(bytes calldata _accessory) internal {
-        accessories.push(_accessory);
+    function _addEar(bytes calldata _ear) internal {
+        ears.push(_ear);
     }
 
     /**
@@ -338,14 +366,22 @@ contract NounsDescriptor is INounsDescriptor, Ownable {
     }
 
     /**
+     * @notice Add a Noun face.
+     */
+    function _addFace(bytes calldata _face) internal {
+        faces.push(_face);
+    }
+
+    /**
      * @notice Get all Noun parts for the passed `seed`.
      */
     function _getPartsForSeed(INounsSeeder.Seed memory seed) internal view returns (bytes[] memory) {
         bytes[] memory _parts = new bytes[](4);
         _parts[0] = bodies[seed.body];
-        _parts[1] = accessories[seed.accessory];
+        _parts[1] = ears[seed.ear];
         _parts[2] = heads[seed.head];
         _parts[3] = glasses[seed.glasses];
+        _parts[4] = faces[seed.face];
         return _parts;
     }
 }

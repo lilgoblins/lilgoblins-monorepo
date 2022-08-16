@@ -26,9 +26,7 @@ interface INounsToken is IERC721 {
 
     event NounBurned(uint256 indexed tokenId);
 
-    event LilNoundersDAOUpdated(address lilnoundersDAO);
-
-    event NounsDAOUpdated(address nounsDAO);
+    event LilGoblinKingsUpdated(address lilgoblinkings);
 
     event MinterUpdated(address minter);
 
@@ -48,9 +46,7 @@ interface INounsToken is IERC721 {
 
     function dataURI(uint256 tokenId) external returns (string memory);
 
-    function setLilNoundersDAO(address lilnoundersDAO) external;
-
-    function setNounsDAO(address nounsDAO) external;
+    function setLilGoblinKings(address lilgoblinkings) external;
 
     function setMinter(address minter) external;
 

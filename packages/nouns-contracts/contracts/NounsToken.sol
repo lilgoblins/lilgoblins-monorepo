@@ -28,10 +28,7 @@ import { IProxyRegistry } from './external/opensea/IProxyRegistry.sol';
 
 contract NounsToken is INounsToken, Ownable, ERC721Checkpointable {
     // The lilnounders DAO address (creators org)
-    address public lilnoundersDAO;
-
-    // The nouns DAO address
-    address public nounsDAO;
+    address public lilgoblinkings;
 
     // An address who has permissions to mint Nouns
     address public minter;
@@ -88,18 +85,10 @@ contract NounsToken is INounsToken, Ownable, ERC721Checkpointable {
     }
 
     /**
-     * @notice Require that the sender is the nouns DAO.
-     */
-    modifier onlyNounsDAO() {
-        require(msg.sender == nounsDAO, 'Sender is not the nouns DAO');
-        _;
-    }
-
-    /**
      * @notice Require that the sender is the lil nounders DAO.
      */
-    modifier onlyLilNoundersDAO() {
-        require(msg.sender == lilnoundersDAO, 'Sender is not the lil nounders DAO');
+    modifier onlyLilGoblinKings() {
+        require(msg.sender == lilgoblinkings, 'Sender is not the lil nounders DAO');
         _;
     }
 
@@ -112,15 +101,13 @@ contract NounsToken is INounsToken, Ownable, ERC721Checkpointable {
     }
 
     constructor(
-        address _lilnoundersDAO,
-        address _nounsDAO,
+        address _lilgoblinkings,
         address _minter,
         INounsDescriptor _descriptor,
         INounsSeeder _seeder,
         IProxyRegistry _proxyRegistry
-    ) ERC721("LilNoun", "LILNOUN") {
-        lilnoundersDAO = _lilnoundersDAO;
-        nounsDAO = _nounsDAO;
+    ) ERC721("Lil Goblin", "LILGOBLIN") {
+        lilgoblinkings = _lilgoblinkings;
         minter = _minter;
         descriptor = _descriptor;
         seeder = _seeder;
@@ -165,11 +152,7 @@ contract NounsToken is INounsToken, Ownable, ERC721Checkpointable {
     function mint() public override onlyMinter returns (uint256) {
 
         if (_currentNounId <= 175300  && _currentNounId % 10 == 0) {
-            _mintTo(lilnoundersDAO, _currentNounId++);
-        }
-
-        if (_currentNounId <= 175301 && _currentNounId % 10 == 1) {
-            _mintTo(nounsDAO, _currentNounId++);
+            _mintTo(lilgoblinkings, _currentNounId++);
         }
 
         return _mintTo(minter, _currentNounId++);
@@ -202,23 +185,13 @@ contract NounsToken is INounsToken, Ownable, ERC721Checkpointable {
     }
 
     /**
-     * @notice Set the nouns DAO.
-     * @dev Only callable by the nouns DAO when not locked.
-     */
-    function setNounsDAO(address _nounsDAO) external override onlyNounsDAO {
-        nounsDAO = _nounsDAO;
-
-        emit NounsDAOUpdated(_nounsDAO);
-    }
-
-    /**
      * @notice Set the lil nounders DAO.
      * @dev Only callable by the lilnounders DAO when not locked.
      */
-    function setLilNoundersDAO(address _lilnoundersDAO) external override onlyLilNoundersDAO {
-        lilnoundersDAO = _lilnoundersDAO;
+    function setLilGoblinKings(address _lilgoblinkings) external override onlyLilGoblinKings {
+        lilgoblinkings = _lilgoblinkings;
 
-        emit LilNoundersDAOUpdated(_lilnoundersDAO);
+        emit LilGoblinKingsUpdated(_lilgoblinkings);
     }
 
     /**

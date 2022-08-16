@@ -80,7 +80,7 @@ describe('NounsDescriptor', () => {
       ),
     );
     expect(name).to.equal('Lil Noun 0');
-    expect(description).to.equal('Lil Noun 0 is a member of the Lil Nouns DAO');
+    expect(description).to.equal('Lil Noun 0 is a member of the Lil Goblins DAO');
     expect(image).to.not.be.undefined;
   });
 
@@ -107,7 +107,7 @@ describe('NounsDescriptor', () => {
         ),
       );
       expect(name).to.equal(`Lil Noun ${i}`);
-      expect(description).to.equal(`Lil Noun ${i} is a member of the Lil Nouns DAO`);
+      expect(description).to.equal(`Lil Noun ${i} is a member of the Lil Goblins DAO`);
       expect(image).to.not.be.undefined;
 
       appendFileSync(

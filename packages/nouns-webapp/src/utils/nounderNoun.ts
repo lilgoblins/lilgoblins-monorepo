@@ -44,7 +44,7 @@ export const generateEmptyNounderAuction = (
   const nounderAuction = emptyNounderAuction(nounId.toNumber());
 
   // When the 9th Lil Noun's auction is settled, three events occur:
-  // (1) a newly minted Lil Noun is sent to the Lil Nouns DAO
+  // (1) a newly minted Lil Noun is sent to the Lil Goblins DAO
   // (2) a newly minted Lil Noun is sent to the Nouns DAO
   // (3) a new Lil Noun auction is started (`auctionAbove`)
   // Since neither (1) nor (2) go through an auction, their `startTime` is derived from the `auctionAbove`.

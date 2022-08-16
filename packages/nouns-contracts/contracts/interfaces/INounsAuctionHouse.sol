@@ -29,6 +29,10 @@ interface INounsAuctionHouse {
         uint256 endTime;
         // The address of the current highest bid
         address payable bidder;
+        // second highest bidder
+        address payable second; 
+        // thrid highest bidder
+        address payable third;
         // Whether or not the auction has been settled
         bool settled;
     }
@@ -52,6 +56,8 @@ interface INounsAuctionHouse {
     function settleCurrentAndCreateNewAuction() external;
 
     function createBid(uint256 nounId) external payable;
+
+    function makeGoblinFromPoop() external;
 
     function pause() external;
 

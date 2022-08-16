@@ -213,6 +213,16 @@
         "type": "address"
       },
       {
+        "internalType": "address payable",
+        "name": "second",
+        "type": "address"
+      },
+      {
+        "internalType": "address payable",
+        "name": "third",
+        "type": "address"
+      },
+      {
         "internalType": "bool",
         "name": "settled",
         "type": "bool"
@@ -255,6 +265,11 @@
         "type": "address"
       },
       {
+        "internalType": "contract IPoopToken",
+        "name": "_poop",
+        "type": "address"
+      },
+      {
         "internalType": "address",
         "name": "_weth",
         "type": "address"
@@ -281,6 +296,13 @@
       }
     ],
     "name": "initialize",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "makeGoblinFromPoop",
     "outputs": [],
     "stateMutability": "nonpayable",
     "type": "function"
@@ -339,6 +361,19 @@
         "internalType": "bool",
         "name": "",
         "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "poop",
+    "outputs": [
+      {
+        "internalType": "contract IPoopToken",
+        "name": "",
+        "type": "address"
       }
     ],
     "stateMutability": "view",

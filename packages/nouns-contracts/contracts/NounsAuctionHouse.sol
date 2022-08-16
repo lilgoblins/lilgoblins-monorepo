@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-3.0
 
-/// @title The Lil Nouns DAO auction house
+/// @title The Lil Goblins DAO auction house
 
 /*********************************
  * ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ *
@@ -30,11 +30,15 @@ import { OwnableUpgradeable } from '@openzeppelin/contracts-upgradeable/access/O
 import { IERC20 } from '@openzeppelin/contracts/token/ERC20/IERC20.sol';
 import { INounsAuctionHouse } from './interfaces/INounsAuctionHouse.sol';
 import { INounsToken } from './interfaces/INounsToken.sol';
+import { IPoopToken } from './interfaces/IPoopToken.sol';
 import { IWETH } from './interfaces/IWETH.sol';
 
 contract NounsAuctionHouse is INounsAuctionHouse, PausableUpgradeable, ReentrancyGuardUpgradeable, OwnableUpgradeable {
     // The Nouns ERC721 token contract
     INounsToken public nouns;
+
+    // The Nouns ERC721 token contract
+    IPoopToken public poop;
 
     // The address of the WETH contract
     address public weth;
@@ -61,6 +65,7 @@ contract NounsAuctionHouse is INounsAuctionHouse, PausableUpgradeable, Reentranc
      */
     function initialize(
         INounsToken _nouns,
+        IPoopToken _poop,
         address _weth,
         uint256 _timeBuffer,
         uint256 _reservePrice,
@@ -74,6 +79,7 @@ contract NounsAuctionHouse is INounsAuctionHouse, PausableUpgradeable, Reentranc
         _pause();
 
         nouns = _nouns;
+        poop = _poop;
         weth = _weth;
         timeBuffer = _timeBuffer;
         reservePrice = _reservePrice;
@@ -114,8 +120,13 @@ contract NounsAuctionHouse is INounsAuctionHouse, PausableUpgradeable, Reentranc
 
         address payable lastBidder = _auction.bidder;
 
+        if (auction.second != address(0)) {
+            auction.third = _auction.second;
+        }
+
         // Refund the last bidder, if applicable
         if (lastBidder != address(0)) {
+            auction.second = lastBidder;
             _safeTransferETHWithFallback(lastBidder, _auction.amount);
         }
 
@@ -133,6 +144,13 @@ contract NounsAuctionHouse is INounsAuctionHouse, PausableUpgradeable, Reentranc
         if (extended) {
             emit AuctionExtended(_auction.nounId, _auction.endTime);
         }
+    }
+
+    function makeGoblinFromPoop() external override nonReentrant whenNotPaused  {
+        require(poop.balanceOf(msg.sender, 1) >= 10, 'No POOP');
+        poop.burn(msg.sender, 10);
+        uint256 nounId = nouns.mint();
+        nouns.transferFrom(address(this), msg.sender, nounId);
     }
 
     /**
@@ -205,6 +223,8 @@ contract NounsAuctionHouse is INounsAuctionHouse, PausableUpgradeable, Reentranc
                 startTime: startTime,
                 endTime: endTime,
                 bidder: payable(0),
+                second: payable(0),
+                third: payable(0),
                 settled: false
             });
 
@@ -231,6 +251,12 @@ contract NounsAuctionHouse is INounsAuctionHouse, PausableUpgradeable, Reentranc
             nouns.burn(_auction.nounId);
         } else {
             nouns.transferFrom(address(this), _auction.bidder, _auction.nounId);
+            if (_auction.second != address(0)) {
+                poop.mint(_auction.second, 1);
+            }
+            if (_auction.third != address(0)) {
+                poop.mint(_auction.third, 1);
+            }
         }
 
         if (_auction.amount > 0) {

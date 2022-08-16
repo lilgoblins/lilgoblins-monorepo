@@ -12,7 +12,6 @@ const DESTINATION = path.join(__dirname, '../src/image-data.json');
 const readPngImage = async (path: string): Promise<PngImage> => {
   const buffer = await fs.readFile(path);
   const png = PNG.sync.read(buffer);
-
   return {
     width: png.width,
     height: png.height,
@@ -32,7 +31,7 @@ const readPngImage = async (path: string): Promise<PngImage> => {
 const encode = async () => {
   const encoder = new PNGCollectionEncoder();
 
-  const partfolders = ['1-bodies', '2-accessories', '3-heads', '4-glasses'];
+  const partfolders = [ '1-bodies', '2-ears', '3-heads', '4-glasses', '5-faces'];
   for (const folder of partfolders) {
     const folderpath = path.join(__dirname, '../images', folder);
     const files = await fs.readdir(folderpath);
@@ -45,7 +44,14 @@ const encode = async () => {
     DESTINATION,
     JSON.stringify(
       {
-        bgcolors: ['d5d7e1', 'e1d7d5'],
+        bgcolors: [
+          '544D36',
+          '4E6972',
+          '9497A5',
+          'B9A193',
+          'BF8B8B',
+          'A7A399'
+        ],
         ...encoder.data,
       },
       null,

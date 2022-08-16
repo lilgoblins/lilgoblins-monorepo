@@ -32,9 +32,10 @@ contract NounsSeeder is INounsSeeder {
 
         uint256 backgroundCount = descriptor.backgroundCount();
         uint256 bodyCount = descriptor.bodyCount();
-        uint256 accessoryCount = descriptor.accessoryCount();
+        uint256 earCount = descriptor.earCount();
         uint256 headCount = descriptor.headCount();
         uint256 glassesCount = descriptor.glassesCount();
+        uint256 faceCount = descriptor.faceCount();
 
         return Seed({
             background: uint48(
@@ -43,14 +44,17 @@ contract NounsSeeder is INounsSeeder {
             body: uint48(
                 uint48(pseudorandomness >> 48) % bodyCount
             ),
-            accessory: uint48(
-                uint48(pseudorandomness >> 96) % accessoryCount
+            ear: uint48(
+                uint48(pseudorandomness >> 96) % earCount
             ),
             head: uint48(
                 uint48(pseudorandomness >> 144) % headCount
             ),
             glasses: uint48(
                 uint48(pseudorandomness >> 192) % glassesCount
+            ),            
+            face: uint48(
+                uint48(pseudorandomness >> 240) % faceCount
             )
         });
     }

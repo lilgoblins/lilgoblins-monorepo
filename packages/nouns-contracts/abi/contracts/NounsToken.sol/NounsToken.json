@@ -3,12 +3,7 @@
     "inputs": [
       {
         "internalType": "address",
-        "name": "_lilnoundersDAO",
-        "type": "address"
-      },
-      {
-        "internalType": "address",
-        "name": "_nounsDAO",
+        "name": "_lilgoblinkings",
         "type": "address"
       },
       {
@@ -160,11 +155,11 @@
       {
         "indexed": false,
         "internalType": "address",
-        "name": "lilnoundersDAO",
+        "name": "lilgoblinkings",
         "type": "address"
       }
     ],
-    "name": "LilNoundersDAOUpdated",
+    "name": "LilGoblinKingsUpdated",
     "type": "event"
   },
   {
@@ -222,7 +217,7 @@
           },
           {
             "internalType": "uint48",
-            "name": "accessory",
+            "name": "ear",
             "type": "uint48"
           },
           {
@@ -234,6 +229,11 @@
             "internalType": "uint48",
             "name": "glasses",
             "type": "uint48"
+          },
+          {
+            "internalType": "uint48",
+            "name": "face",
+            "type": "uint48"
           }
         ],
         "indexed": false,
@@ -243,19 +243,6 @@
       }
     ],
     "name": "NounCreated",
-    "type": "event"
-  },
-  {
-    "anonymous": false,
-    "inputs": [
-      {
-        "indexed": false,
-        "internalType": "address",
-        "name": "nounsDAO",
-        "type": "address"
-      }
-    ],
-    "name": "NounsDAOUpdated",
     "type": "event"
   },
   {
@@ -681,7 +668,7 @@
   },
   {
     "inputs": [],
-    "name": "lilnoundersDAO",
+    "name": "lilgoblinkings",
     "outputs": [
       {
         "internalType": "address",
@@ -766,19 +753,6 @@
         "internalType": "uint256",
         "name": "",
         "type": "uint256"
-      }
-    ],
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "inputs": [],
-    "name": "nounsDAO",
-    "outputs": [
-      {
-        "internalType": "address",
-        "name": "",
-        "type": "address"
       }
     ],
     "stateMutability": "view",
@@ -941,7 +915,7 @@
       },
       {
         "internalType": "uint48",
-        "name": "accessory",
+        "name": "ear",
         "type": "uint48"
       },
       {
@@ -952,6 +926,11 @@
       {
         "internalType": "uint48",
         "name": "glasses",
+        "type": "uint48"
+      },
+      {
+        "internalType": "uint48",
+        "name": "face",
         "type": "uint48"
       }
     ],
@@ -1006,11 +985,11 @@
     "inputs": [
       {
         "internalType": "address",
-        "name": "_lilnoundersDAO",
+        "name": "_lilgoblinkings",
         "type": "address"
       }
     ],
-    "name": "setLilNoundersDAO",
+    "name": "setLilGoblinKings",
     "outputs": [],
     "stateMutability": "nonpayable",
     "type": "function"
@@ -1024,19 +1003,6 @@
       }
     ],
     "name": "setMinter",
-    "outputs": [],
-    "stateMutability": "nonpayable",
-    "type": "function"
-  },
-  {
-    "inputs": [
-      {
-        "internalType": "address",
-        "name": "_nounsDAO",
-        "type": "address"
-      }
-    ],
-    "name": "setNounsDAO",
     "outputs": [],
     "stateMutability": "nonpayable",
     "type": "function"

@@ -28,7 +28,7 @@
           },
           {
             "internalType": "uint48",
-            "name": "accessory",
+            "name": "ear",
             "type": "uint48"
           },
           {
@@ -39,6 +39,11 @@
           {
             "internalType": "uint48",
             "name": "glasses",
+            "type": "uint48"
+          },
+          {
+            "internalType": "uint48",
+            "name": "face",
             "type": "uint48"
           }
         ],

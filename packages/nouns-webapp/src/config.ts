@@ -32,8 +32,8 @@ const INFURA_PROJECT_ID = process.env.REACT_APP_INFURA_PROJECT_ID;
 export const createNetworkHttpUrl = (network: string): string => {
   const custom = process.env[`REACT_APP_${network.toUpperCase()}_JSONRPC`];
 
-  if (network === 'rinkeby') {
-    return custom || `https://${network}.infura.io/v3/${INFURA_PROJECT_ID}`;
+  if (network === 'goerli') {
+    return custom || `https://eth-mainnet.g.alchemy.com/v2/06ijGb0mR4IObNvIRJLK_jQqla4hPpK8`;
   } else {
     return custom || `https://eth-mainnet.alchemyapi.io/v2/tEAmLPls4-IajaZM2nyTIfG6CqK_uAb0`;
   }
@@ -42,8 +42,8 @@ export const createNetworkHttpUrl = (network: string): string => {
 export const createNetworkWsUrl = (network: string): string => {
   const custom = process.env[`REACT_APP_${network.toUpperCase()}_WSRPC`];
 
-  if (network === 'rinkeby') {
-    return custom || `wss://${network}.infura.io/ws/v3/${INFURA_PROJECT_ID}`;
+  if (network === 'goerli') {
+    return custom || `wss://eth-mainnet.g.alchemy.com/v2/06ijGb0mR4IObNvIRJLK_jQqla4hPpK8`;
   } else {
     return custom || 'wss://eth-mainnet.alchemyapi.io/v2/tEAmLPls4-IajaZM2nyTIfG6CqK_uAb0';
   }

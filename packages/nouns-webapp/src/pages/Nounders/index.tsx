@@ -94,7 +94,7 @@ const NoundersPage = () => {
         </Row>
         <h3>Lil Nounders' Reward</h3>
         <p style={{ textAlign: 'justify' }}>
-          All Lil Noun auction proceeds are sent to the Lil Nouns DAO. For this reason, we, the
+          All Lil Noun auction proceeds are sent to the Lil Goblins DAO. For this reason, we, the
           project's founders (‘Lil Nounders’) have chosen to compensate ourselves with Lil Nouns.
           Every 10th noun for the first 5 years of the project will be sent to our multisig, where
           it will be vested and distributed to individual Lil Nounders.

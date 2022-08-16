@@ -53,51 +53,6 @@
   {
     "inputs": [
       {
-        "internalType": "uint256",
-        "name": "",
-        "type": "uint256"
-      }
-    ],
-    "name": "accessories",
-    "outputs": [
-      {
-        "internalType": "bytes",
-        "name": "",
-        "type": "bytes"
-      }
-    ],
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "inputs": [],
-    "name": "accessoryCount",
-    "outputs": [
-      {
-        "internalType": "uint256",
-        "name": "",
-        "type": "uint256"
-      }
-    ],
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "inputs": [
-      {
-        "internalType": "bytes",
-        "name": "_accessory",
-        "type": "bytes"
-      }
-    ],
-    "name": "addAccessory",
-    "outputs": [],
-    "stateMutability": "nonpayable",
-    "type": "function"
-  },
-  {
-    "inputs": [
-      {
         "internalType": "string",
         "name": "_background",
         "type": "string"
@@ -143,6 +98,32 @@
     "inputs": [
       {
         "internalType": "bytes",
+        "name": "_ear",
+        "type": "bytes"
+      }
+    ],
+    "name": "addEar",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes",
+        "name": "_face",
+        "type": "bytes"
+      }
+    ],
+    "name": "addFace",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes",
         "name": "_glasses",
         "type": "bytes"
       }
@@ -161,19 +142,6 @@
       }
     ],
     "name": "addHead",
-    "outputs": [],
-    "stateMutability": "nonpayable",
-    "type": "function"
-  },
-  {
-    "inputs": [
-      {
-        "internalType": "bytes[]",
-        "name": "_accessories",
-        "type": "bytes[]"
-      }
-    ],
-    "name": "addManyAccessories",
     "outputs": [],
     "stateMutability": "nonpayable",
     "type": "function"
@@ -218,6 +186,32 @@
       }
     ],
     "name": "addManyColorsToPalette",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes[]",
+        "name": "_ears",
+        "type": "bytes[]"
+      }
+    ],
+    "name": "addManyEars",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes[]",
+        "name": "_faces",
+        "type": "bytes[]"
+      }
+    ],
+    "name": "addManyFaces",
     "outputs": [],
     "stateMutability": "nonpayable",
     "type": "function"
@@ -359,7 +353,7 @@
           },
           {
             "internalType": "uint48",
-            "name": "accessory",
+            "name": "ear",
             "type": "uint48"
           },
           {
@@ -370,6 +364,11 @@
           {
             "internalType": "uint48",
             "name": "glasses",
+            "type": "uint48"
+          },
+          {
+            "internalType": "uint48",
+            "name": "face",
             "type": "uint48"
           }
         ],
@@ -384,6 +383,70 @@
         "internalType": "string",
         "name": "",
         "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "earCount",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "ears",
+    "outputs": [
+      {
+        "internalType": "bytes",
+        "name": "",
+        "type": "bytes"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "faceCount",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "faces",
+    "outputs": [
+      {
+        "internalType": "bytes",
+        "name": "",
+        "type": "bytes"
       }
     ],
     "stateMutability": "view",
@@ -405,7 +468,7 @@
           },
           {
             "internalType": "uint48",
-            "name": "accessory",
+            "name": "ear",
             "type": "uint48"
           },
           {
@@ -416,6 +479,11 @@
           {
             "internalType": "uint48",
             "name": "glasses",
+            "type": "uint48"
+          },
+          {
+            "internalType": "uint48",
+            "name": "face",
             "type": "uint48"
           }
         ],
@@ -461,7 +529,7 @@
           },
           {
             "internalType": "uint48",
-            "name": "accessory",
+            "name": "ear",
             "type": "uint48"
           },
           {
@@ -472,6 +540,11 @@
           {
             "internalType": "uint48",
             "name": "glasses",
+            "type": "uint48"
+          },
+          {
+            "internalType": "uint48",
+            "name": "face",
             "type": "uint48"
           }
         ],
@@ -660,7 +733,7 @@
           },
           {
             "internalType": "uint48",
-            "name": "accessory",
+            "name": "ear",
             "type": "uint48"
           },
           {
@@ -671,6 +744,11 @@
           {
             "internalType": "uint48",
             "name": "glasses",
+            "type": "uint48"
+          },
+          {
+            "internalType": "uint48",
+            "name": "face",
             "type": "uint48"
           }
         ],

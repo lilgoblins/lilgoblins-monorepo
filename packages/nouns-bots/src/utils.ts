@@ -60,19 +60,19 @@ export function getAuctionEndingSoonTweetText() {
 }
 
 export function formatNewGovernanceProposalText(proposal: Proposal) {
-  return `A new Lil Nouns DAO proposal (#${proposal.id}) has been created: ${extractProposalTitle(
+  return `A new Lil Goblins DAO proposal (#${proposal.id}) has been created: ${extractProposalTitle(
     proposal,
   )}`;
 }
 
 export function formatUpdatedGovernanceProposalStatusText(proposal: Proposal) {
-  return `Lil Nouns DAO proposal #${proposal.id} (${extractProposalTitle(
+  return `Lil Goblins DAO proposal #${proposal.id} (${extractProposalTitle(
     proposal,
   )}) has changed to status: ${proposal.status.toLocaleLowerCase()}`;
 }
 
 export function formatProposalAtRiskOfExpiryText(proposal: Proposal) {
-  return `Lil Nouns DAO proposal #${proposal.id} (${extractProposalTitle(
+  return `Lil Goblins DAO proposal #${proposal.id} (${extractProposalTitle(
     proposal,
   )}) expires in less than two days. Please execute it immediately!`;
 }

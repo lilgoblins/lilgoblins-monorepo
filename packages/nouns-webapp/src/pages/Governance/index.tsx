@@ -67,10 +67,10 @@ const GovernancePage = () => {
       <Col lg={10} className={classes.wrapper}>
         <Row className={classes.headerRow}>
           <span>Governance</span>
-          <h1>Lil Nouns DAO</h1>
+          <h1>Lil Goblins DAO</h1>
         </Row>
         <p className={classes.subheading}>
-          Lil Nouns govern <span className={classes.boldText}>Lil Nouns DAO</span>. Lil Nouns can
+          Lil Nouns govern <span className={classes.boldText}>Lil Goblins DAO</span>. Lil Nouns can
           vote on proposals or delegate their vote to a third party. A minimum of{' '}
           <span className={classes.boldText}>{nounThresholdCopy}</span> is required to submit
           proposals.{' '} A minimum of <span className={classes.boldText}>{"1 Lil Noun"}</span> is required to vote.
@@ -115,7 +115,7 @@ const GovernancePage = () => {
             </Row>
           </Col>
           <Col className={classes.treasuryInfoText}>
-            This treasury exists for <span className={classes.boldText}>Lil Nouns DAO</span>{' '}
+            This treasury exists for <span className={classes.boldText}>Lil Goblins DAO</span>{' '}
             participants to allocate resources for the long-term growth and prosperity of the Lil
             Nouns project.
           </Col>

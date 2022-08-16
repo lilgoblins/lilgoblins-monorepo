@@ -26,8 +26,8 @@ const Documentation = () => {
             Lil Nouns are just like Nouns, but Lil!
             <br />
             <br />
-            An expansion DAO based on {nounsDao}, Lil Nouns DAO works to create a new layer within
-            the Nouns ecosystem; Nouns as kids. By expanding the ecosystem, Lil Nouns DAO aims at
+            An expansion DAO based on {nounsDao}, Lil Goblins DAO works to create a new layer within
+            the Nouns ecosystem; Nouns as kids. By expanding the ecosystem, Lil Goblins DAO aims at
             exposing more people to Nouns.
           </p>
           <p className={classes.aboutText} style={{ paddingBottom: '4rem' }}>
@@ -45,9 +45,9 @@ const Documentation = () => {
                   100% of Lil Noun auction proceeds are trustlessly sent to the Lil Nouns treasury.
                 </li>
                 <li>Settlement of one auction kicks off the next.</li>
-                <li>All Lil Nouns are members of Lil Nouns DAO.</li>
-                <li>Lil Nouns DAO is backed by Nouns via Small Grants.</li>
-                <li>Lil Nouns DAO uses Nouns DAO’s fork of  {compoundGovLink}.</li>
+                <li>All Lil Nouns are members of Lil Goblins DAO.</li>
+                <li>Lil Goblins DAO is backed by Nouns via Small Grants.</li>
+                <li>Lil Goblins DAO uses Nouns DAO’s fork of  {compoundGovLink}.</li>
                 <li>One Lil Noun is equal to one vote.</li>
                 <li>The treasury is controlled exclusively by Lil Nouns via governance.</li>
                 <li>Artwork is generative and stored directly on-chain (not IPFS).</li>
@@ -74,7 +74,7 @@ const Documentation = () => {
               <p className={classes.aboutText}>
                 The Lil Nouns Auction Contract will act as a self-sufficient Lil Noun generation and
                 distribution mechanism, auctioning one Lil Noun every 15 minutes, forever. 100% of
-                auction proceeds (ETH) are automatically deposited in the Lil Nouns DAO treasury,
+                auction proceeds (ETH) are automatically deposited in the Lil Goblins DAO treasury,
                 where they are governed by Lil Noun owners.
               </p>
 
@@ -127,10 +127,10 @@ const Documentation = () => {
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="3" className={classes.accordionItem}>
-            <Accordion.Header className={classes.accordionHeader}>Lil Nouns DAO</Accordion.Header>
+            <Accordion.Header className={classes.accordionHeader}>Lil Goblins DAO</Accordion.Header>
             <Accordion.Body>
-              Lil Nouns DAO utilizes Nouns DAO's fork of {compoundGovLink} and is the main governing
-              body of the Lil Nouns ecosystem. The Lil Nouns DAO treasury receives 100% of ETH
+              Lil Goblins DAO utilizes Nouns DAO's fork of {compoundGovLink} and is the main governing
+              body of the Lil Nouns ecosystem. The Lil Goblins DAO treasury receives 100% of ETH
               proceeds from daily Lil Noun auctions. Each Lil Noun is an irrevocable member of Lil
               Nouns DAO and entitled to one vote in all governance matters. Lil Noun votes are
               non-transferable (if you sell your Lil Noun the vote goes with it) but delegatable,
@@ -201,7 +201,7 @@ const Documentation = () => {
               <p>
                 The Lil Noun Seeder contract is used to determine Lil Noun traits during the minting
                 process. The seeder contract can be replaced to allow for future trait generation
-                algorithm upgrades. Additionally, it can be locked by the Lil Nouns DAO to prevent
+                algorithm upgrades. Additionally, it can be locked by the Lil Goblins DAO to prevent
                 any future updates. Currently, Lil Noun traits are determined using pseudo-random
                 number generation:
               </p>
@@ -242,7 +242,7 @@ const Documentation = () => {
                 </li>
               </ul>
               <p>
-                Because 100% of Lil Noun auction proceeds are sent to Lil Nouns DAO, Lil Nounders
+                Because 100% of Lil Noun auction proceeds are sent to Lil Goblins DAO, Lil Nounders
                 have chosen to compensate themselves with Lil Nouns. Every 10th Lil Noun for the
                 first 5 years of the project (Lil Noun ids #0, #10, #20, #30 and so on) will be
                 automatically sent to the Lil Nounder's multisig to be vested and shared among the

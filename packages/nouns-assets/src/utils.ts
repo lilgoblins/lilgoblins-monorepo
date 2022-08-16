@@ -2,9 +2,8 @@ import { keccak256 as solidityKeccak256 } from '@ethersproject/solidity';
 import { BigNumber, BigNumberish } from '@ethersproject/bignumber';
 import { NounSeed, NounData } from './types';
 import { images, bgcolors } from './image-data.json';
-import { images as bigNounImages, bgcolors as bigNounBgcolors} from './big-noun-image-data.json';
 
-const { bodies, accessories, heads, glasses } = images;
+const { bodies, ears, heads, glasses, faces } = images;
 
 /**
  * Get encoded part and background information using a Noun seed
@@ -14,28 +13,12 @@ export const getNounData = (seed: NounSeed): NounData => {
   return {
     parts: [
       bodies[seed.body],
-      accessories[seed.accessory],
+      ears[seed.ear],
       heads[seed.head],
       glasses[seed.glasses],
+      faces[seed.face],
     ],
     background: bgcolors[seed.background],
-  };
-};
-
-/**
- * Data fetch for Nouns propper
- * Get encoded part and background information using a Noun seed
- * @param seed The Noun seed
- */
- export const getBigNounData = (seed: NounSeed): NounData => {
-  return {
-    parts: [
-      bigNounImages.bodies[seed.body],
-      bigNounImages.accessories[seed.accessory],
-      bigNounImages.heads[seed.head],
-      bigNounImages.glasses[seed.glasses],
-    ],
-    background: bigNounBgcolors[seed.background],
   };
 };
 
@@ -47,9 +30,10 @@ export const getRandomNounSeed = (): NounSeed => {
   return {
     background: Math.floor(Math.random() * bgcolors.length),
     body: Math.floor(Math.random() * bodies.length),
-    accessory: Math.floor(Math.random() * accessories.length),
+    ear: Math.floor(Math.random() * ears.length),
     head: Math.floor(Math.random() * heads.length),
     glasses: Math.floor(Math.random() * glasses.length),
+    face: Math.floor(Math.random() * faces.length),
   };
 };
 
@@ -79,7 +63,7 @@ export const getPseudorandomPart = (
   pseudorandomness: string,
   partCount: number,
   shiftAmount: number,
-  uintSize: number = 48,
+  uintSize = 48,
 ): number => {
   const hex = shiftRightAndCast(pseudorandomness, shiftAmount, uintSize);
   return BigNumber.from(hex).mod(partCount).toNumber();
@@ -95,8 +79,9 @@ export const getNounSeedFromBlockHash = (nounId: BigNumberish, blockHash: string
   return {
     background: getPseudorandomPart(pseudorandomness, bgcolors.length, 0),
     body: getPseudorandomPart(pseudorandomness, bodies.length, 48),
-    accessory: getPseudorandomPart(pseudorandomness, accessories.length, 96),
+    ear: getPseudorandomPart(pseudorandomness, ears.length, 96),
     head: getPseudorandomPart(pseudorandomness, heads.length, 144),
     glasses: getPseudorandomPart(pseudorandomness, glasses.length, 192),
+    face: getPseudorandomPart(pseudorandomness, faces.length, 192),
   };
 };

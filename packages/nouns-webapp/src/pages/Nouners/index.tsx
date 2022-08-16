@@ -65,9 +65,9 @@ const NounersPage = () => {
           </Col>
           <br />
 
-          <h3>Lil Nouns DAO</h3>
+          <h3>Lil Goblins DAO</h3>
           <Col style={{ textAlign: 'justify' }}>
-            These are channels where only Lil Nouns DAO members can post. In the spirit of having an open
+            These are channels where only Lil Goblins DAO members can post. In the spirit of having an open
             and collaborative environment, all of these channels (except for #nouner-private) are
             viewable by the public.
           </Col>
@@ -185,7 +185,7 @@ const NounersPage = () => {
             #voice-private
           </a>
           <Col style={{ textAlign: 'justify' }}>
-            This is for the Lil Nouns DAO Members Weekly Town Hall call (date and time TBD)
+            This is for the Lil Goblins DAO Members Weekly Town Hall call (date and time TBD)
             Proposal Process: to be done - info on how a proposal is born, gets vetted, gets
             enacted, and how Lil Nouners can help
           </Col>

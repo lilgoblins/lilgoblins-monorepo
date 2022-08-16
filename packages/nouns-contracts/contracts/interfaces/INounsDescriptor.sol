@@ -38,21 +38,25 @@ interface INounsDescriptor {
 
     function bodies(uint256 index) external view returns (bytes memory);
 
-    function accessories(uint256 index) external view returns (bytes memory);
+    function ears(uint256 index) external view returns (bytes memory);
 
     function heads(uint256 index) external view returns (bytes memory);
 
     function glasses(uint256 index) external view returns (bytes memory);
 
+    function faces(uint256 index) external view returns (bytes memory);
+
     function backgroundCount() external view returns (uint256);
 
     function bodyCount() external view returns (uint256);
 
-    function accessoryCount() external view returns (uint256);
+    function earCount() external view returns (uint256);
 
     function headCount() external view returns (uint256);
 
     function glassesCount() external view returns (uint256);
+
+    function faceCount() external view returns (uint256);
 
     function addManyColorsToPalette(uint8 paletteIndex, string[] calldata newColors) external;
 
@@ -60,11 +64,13 @@ interface INounsDescriptor {
 
     function addManyBodies(bytes[] calldata bodies) external;
 
-    function addManyAccessories(bytes[] calldata accessories) external;
+    function addManyEars(bytes[] calldata ears) external;
 
     function addManyHeads(bytes[] calldata heads) external;
 
     function addManyGlasses(bytes[] calldata glasses) external;
+
+    function addManyFaces(bytes[] calldata faces) external;
 
     function addColorToPalette(uint8 paletteIndex, string calldata color) external;
 
@@ -72,11 +78,13 @@ interface INounsDescriptor {
 
     function addBody(bytes calldata body) external;
 
-    function addAccessory(bytes calldata accessory) external;
+    function addEar(bytes calldata ear) external;
 
     function addHead(bytes calldata head) external;
 
     function addGlasses(bytes calldata glasses) external;
+
+    function addFace(bytes calldata face) external;
 
     function lockParts() external;
 
