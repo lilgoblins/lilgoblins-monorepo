@@ -9,9 +9,9 @@ const Banner = () => {
     <Section fullWidth={false} className={classes.bannerSection}>
       <div className={classes.wrapper}>
         <h1 style={{ textAlign: 'center' }}>
-          1 FREE LIL GOBLIN,
+          ONE LIL GOBLIN,
           <br />
-          EVERY 60 MINUTES,
+          EVERY HOUR,
           <br />
           FOREVER FUCKERS.
         </h1>
