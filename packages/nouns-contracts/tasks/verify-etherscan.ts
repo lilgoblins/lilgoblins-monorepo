@@ -3,7 +3,7 @@ import { task } from 'hardhat/config';
 import { default as NounsAuctionHouseABI } from '../abi/contracts//NounsAuctionHouse.sol/NounsAuctionHouse.json';
 
 type ContractName =
-  // | 'PoopToken'
+  | 'PoopToken'
   | 'NFTDescriptor'
   | 'NounsDescriptor'
   | 'NounsSeeder'
@@ -38,14 +38,14 @@ const expectedAuctionHouseProxyAddress = '0x152f0b7d70f1bB56F9118972b6A9009bAf6D
 const expectedNounsDAOProxyAddress = '0x152f2CcD58266451DC03f89023dEA2bf167245B9'
 
 const contracts: Record<ContractName, VerifyArgs> = {
-  // PoopToken: {
-  //   address: '0xd6E2C08fb0A9BE79c31A11a3500D25667a064b36',
-  //   constructorArguments: [
-  //     lilgoblinkings,
-  //     expectedAuctionHouseProxyAddress,
-  //     "0xa5409ec958c83c3f309868babaca7c86dcb077c1",
-  //   ]
-  // },
+  PoopToken: {
+    address: '0xd6E2C08fb0A9BE79c31A11a3500D25667a064b36',
+    constructorArguments: [
+      lilgoblinkings,
+      expectedAuctionHouseProxyAddress,
+      "0xa5409ec958c83c3f309868babaca7c86dcb077c1",
+    ]
+  },
   NFTDescriptor: {
     address: '0x0fd3Fb251E1112e46efD8c0da199E6245FaE1F77',
   },
