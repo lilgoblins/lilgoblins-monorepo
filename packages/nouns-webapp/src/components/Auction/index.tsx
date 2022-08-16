@@ -36,11 +36,11 @@ const Auction: React.FC<AuctionProps> = props => {
 
   const prevAuctionHandler = () => {
     dispatch(setPrevOnDisplayAuctionNounId());
-    currentAuction && history.push(`/lilnoun/${currentAuction.nounId.toNumber() - 1}`);
+    currentAuction && history.push(`/lilgoblin/${currentAuction.nounId.toNumber() - 1}`);
   };
   const nextAuctionHandler = () => {
     dispatch(setNextOnDisplayAuctionNounId());
-    currentAuction && history.push(`/lilnoun/${currentAuction.nounId.toNumber() + 1}`);
+    currentAuction && history.push(`/lilgoblin/${currentAuction.nounId.toNumber() + 1}`);
   };
 
   const nounContent = currentAuction && (
@@ -96,7 +96,7 @@ const Auction: React.FC<AuctionProps> = props => {
           </Col>
           <Col lg={{ span: 6 }} className={classes.auctionActivityCol}>
             {currentAuction &&
-              (isNounderNoun(currentAuction.nounId) || isNounsDAONoun(currentAuction.nounId)
+              (isNounderNoun(currentAuction.nounId) 
                 ? nounderNounContent
                 : currentAuctionActivityContent)}
           </Col>

@@ -58,7 +58,7 @@ const StandaloneNoun: React.FC<StandaloneNounProps> = (props: StandaloneNounProp
 
   return (
     <Link
-      to={'/lilnoun/' + nounId.toString()}
+      to={'/lilgoblin/' + nounId.toString()}
       className={classes.clickableNoun}
       onClick={onClickHandler}
     >
@@ -81,7 +81,7 @@ export const StandaloneNounCircular: React.FC<StandaloneCircularNounProps> = (
 
   return (
     <Link
-      to={'/lilnoun/' + nounId.toString()}
+      to={'/lilgoblin/' + nounId.toString()}
       className={classes.clickableNoun}
       onClick={onClickHandler}
     >
@@ -109,7 +109,7 @@ export const StandaloneNounRoundedCorners: React.FC<StandaloneNounProps> = (
 
   return (
     <Link
-      to={'/lilnoun/' + nounId.toString()}
+      to={'/lilgoblin/' + nounId.toString()}
       className={classes.clickableNoun}
       onClick={onClickHandler}
     >
@@ -143,7 +143,7 @@ export const StandaloneNounWithSeed: React.FC<StandaloneNounWithSeedProps> = (
   const noun = <Noun imgPath={image} alt={description} parts={parts} />;
   const nounWithLink = (
     <Link
-      to={'/lilnoun/' + nounId.toString()}
+      to={'/lilgoblin/' + nounId.toString()}
       className={classes.clickableNoun}
       onClick={onClickHandler}
     >

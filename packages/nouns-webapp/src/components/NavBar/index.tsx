@@ -33,10 +33,10 @@ const NavBar = () => {
   const isPreLaunch = config.isPreLaunch === 'true';
 
   const useStateBg = isPreLaunch
-    ? history.location.pathname.includes('/lilnoun/') ||
+    ? history.location.pathname.includes('/lilgoblin/') ||
       history.location.pathname.includes('/auction/')
     : history.location.pathname === '/' ||
-      history.location.pathname.includes('/lilnoun/') ||
+      history.location.pathname.includes('/lilgoblin/') ||
       history.location.pathname.includes('/auction/');
 
   // const navLogo = useStateBg ? logo : logoAlternate;

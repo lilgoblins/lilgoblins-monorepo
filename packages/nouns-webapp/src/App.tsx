@@ -127,7 +127,7 @@ function App() {
               <Route exact path="/" component={AuctionPage} />
               <Route
                 exact
-                path="/lilnoun/:id"
+                path="/lilgoblin/:id"
                 render={props => <AuctionPage initialAuctionId={Number(props.match.params.id)} />}
               />
               <Route exact path="/lilnounders" component={NoundersPage} />

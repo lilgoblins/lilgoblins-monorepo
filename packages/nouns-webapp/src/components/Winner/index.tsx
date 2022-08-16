@@ -52,7 +52,7 @@ const Winner: React.FC<WinnerProps> = props => {
   );
 
   const nounsDAOContent = <h2>NounsDAO</h2>;
-  const lilnounderNounContent = <h2>lilnounders.eth</h2>;
+  const lilnounderNounContent = <h2>lilgoblinkings.eth</h2>;
 
   return (
     <>
