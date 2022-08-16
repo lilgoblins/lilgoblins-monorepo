@@ -30,7 +30,7 @@ const NavBarTreasury: React.FC<NavBarTreasuryProps> = props => {
     <div className={`${classes.wrapper} ${treasuryStyleClass}`}>
       <div className={classes.button}>
         <div
-          className="d-flex flex-row justify-content-around"
+          className="flex-row d-flex justify-content-around"
           style={{
             paddingTop: '1px',
           }}
@@ -46,9 +46,9 @@ const NavBarTreasury: React.FC<NavBarTreasuryProps> = props => {
           <div className={classes.treasuryBalance}>
             Ξ {Number(treasuryBalance).toLocaleString('en-US')}
           </div>
-          <div className={classes.treasuryBigNounBalance}>
+          {/* <div className={classes.treasuryBigNounBalance}>
             + {`${treasuryBigNounBalance} Nouns`}
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

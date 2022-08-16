@@ -17,7 +17,7 @@ const GovernancePage = () => {
   const { data: proposals } = useAllProposals();
   const threshold = useProposalThreshold();
   const nounsRequired = threshold !== undefined ? threshold + 1 : '...';
-  const nounThresholdCopy = `${nounsRequired} ${threshold === 0 ? 'Lil Noun' : 'Lil Nouns'}`;
+  const nounThresholdCopy = `${nounsRequired} ${threshold === 0 ? 'Lil Goblin' : 'Lil Goblins'}`;
 
   const treasuryBalance = useTreasuryBalance();
   const treasuryBalanceUSD = useTreasuryUSDValue();
@@ -70,10 +70,10 @@ const GovernancePage = () => {
           <h1>Lil Goblins DAO</h1>
         </Row>
         <p className={classes.subheading}>
-          Lil Nouns govern <span className={classes.boldText}>Lil Goblins DAO</span>. Lil Nouns can
+          Lil Goblins govern <span className={classes.boldText}>Lil Goblins DAO</span>. Lil Goblins can
           vote on proposals or delegate their vote to a third party. A minimum of{' '}
           <span className={classes.boldText}>{nounThresholdCopy}</span> is required to submit
-          proposals.{' '} A minimum of <span className={classes.boldText}>{"1 Lil Noun"}</span> is required to vote.
+          proposals.{' '} A minimum of <span className={classes.boldText}>{"1 Lil Goblin"}</span> is required to vote.
         </p>
 
         <Row className={classes.treasuryInfoCard}>
@@ -99,7 +99,7 @@ const GovernancePage = () => {
                 </h1>
               </Col>
             </Row>
-            <Row>
+            {/* <Row>
               <Col className={clsx(classes.ethTreasuryAmt)} lg={3}>
                 <h1 className={classes.BigNounBalance}>{bigNounBalance}</h1>
                 <h1>{' Nouns'}</h1>
@@ -112,7 +112,7 @@ const GovernancePage = () => {
                   </Row>
                 </Col>
               )}
-            </Row>
+            </Row> */}
           </Col>
           <Col className={classes.treasuryInfoText}>
             This treasury exists for <span className={classes.boldText}>Lil Goblins DAO</span>{' '}

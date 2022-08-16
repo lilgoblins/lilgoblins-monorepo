@@ -162,13 +162,13 @@ const NavBar = () => {
               </>
             ) : (
               <>
-                <Nav.Link as={Link} to="/ideas" className={classes.nounsNavLink}>
+                {/* <Nav.Link as={Link} to="/ideas" className={classes.nounsNavLink}>
                   <NavBarButton
                     buttonText={'Ideas'}
                     buttonIcon={<FontAwesomeIcon icon={faLightbulb} />}
                     buttonStyle={nonWalletButtonStyle}
                   />
-                </Nav.Link>
+                </Nav.Link> */}
                 <Nav.Link as={Link} to="/vote" className={classes.nounsNavLink}>
                   <NavBarButton
                     buttonText={'DAO'}
@@ -176,7 +176,7 @@ const NavBar = () => {
                     buttonStyle={nonWalletButtonStyle}
                   />
                 </Nav.Link>
-                <Nav.Link
+                {/* <Nav.Link
                   href={externalURL(ExternalURL.notion)}
                   className={classes.nounsNavLink}
                   target="_blank"
@@ -187,8 +187,8 @@ const NavBar = () => {
                     buttonIcon={<FontAwesomeIcon icon={faBookOpen} />}
                     buttonStyle={nonWalletButtonStyle}
                   />
-                </Nav.Link>
-                <Nav.Link
+                </Nav.Link> */}
+                {/* <Nav.Link
               href={externalURL(ExternalURL.discourse)}
               className={classes.nounsNavLink}
               target="_blank"
@@ -199,7 +199,7 @@ const NavBar = () => {
                 buttonIcon={<FontAwesomeIcon icon={faComments} />}
                 buttonStyle={nonWalletButtonStyle}
               />
-            </Nav.Link>
+            </Nav.Link> */}
                 <Nav.Link as={Link} to="/playground" className={classes.nounsNavLink}>
                   <NavBarButton
                     buttonText={'Playground'}
