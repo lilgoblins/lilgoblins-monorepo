@@ -40,13 +40,15 @@ const Documentation = () => {
             <Accordion.Body>
               <ul>
                 <li>Lil Goblins artwork is in the {publicDomainLink}.</li>
-                <li>One Lil Goblin is born and trustlessly auctioned every 15 minutes, forever.</li>
+                <li>One Lil Goblin is born and trustlessly auctioned every hour, forever.</li>
+                <li>Second and third place bidders are given Lil Goblin Poops.</li>
+                <li>10 Lil Goblin Poops can be converted into 1 Lil Goblin.</li>
                 <li>
                   100% of Lil Goblin auction proceeds are trustlessly sent to the Lil Goblins treasury.
                 </li>
                 <li>Settlement of one auction kicks off the next.</li>
                 <li>All Lil Goblins are members of Lil Goblins DAO.</li>
-                <li>Lil Goblins DAO is backed by Nouns via Small Grants.</li>
+                <li>Lil Goblins DAO is backed by Lil Nouns via Small Grants.</li>
                 <li>Lil Goblins DAO uses Nouns DAO’s fork of  {compoundGovLink}.</li>
                 <li>One Lil Goblin is equal to one vote.</li>
                 <li>The treasury is controlled exclusively by Lil Goblins via governance.</li>
@@ -55,11 +57,7 @@ const Documentation = () => {
                   No explicit rules exist for attribute scarcity; all Lil Goblins are equally rare.
                 </li>
                 <li>
-                  Lil Goblinders receive rewards in the form of Lil Goblins (10% of supply for first 5
-                  years).
-                </li>
-                <li>
-                  Nouns DAO receives rewards in the form of Lil Goblins (10% of supply for first 5
+                  Lil Goblin Kings receive rewards in the form of Lil Goblins (10% of supply for first 5
                   years).
                 </li>
               </ul>
@@ -68,19 +66,19 @@ const Documentation = () => {
 
           <Accordion.Item eventKey="1" className={classes.accordionItem}>
             <Accordion.Header className={classes.accordionHeader}>
-              15 Minute Auctions
+              An Hour Auctions
             </Accordion.Header>
             <Accordion.Body>
               <p className={classes.aboutText}>
                 The Lil Goblins Auction Contract will act as a self-sufficient Lil Goblin generation and
-                distribution mechanism, auctioning one Lil Goblin every 15 minutes, forever. 100% of
+                distribution mechanism, auctioning one Lil Goblin every hour, forever. 100% of
                 auction proceeds (ETH) are automatically deposited in the Lil Goblins DAO treasury,
                 where they are governed by Lil Goblin owners.
               </p>
 
               <p className={classes.aboutText}>
                 Each time an auction is settled, the settlement transaction will also cause a new
-                Lil Goblin to be minted and a new 15 minute auction to begin.{' '}
+                Lil Goblin to be minted and a new hour auction to begin.{' '}
               </p>
               <p>
                 While settlement is most heavily incentivized for the winning bidder, it can be
