@@ -21,7 +21,7 @@
 @media (max-width: 992px) {
   .navBarLogo {
     width: 95px;
-    height: 95px;
+    height: auto;
   }
 
   .navBarCustom {
