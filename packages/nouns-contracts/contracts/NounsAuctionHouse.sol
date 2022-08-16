@@ -110,7 +110,7 @@ contract NounsAuctionHouse is INounsAuctionHouse, PausableUpgradeable, Reentranc
     function createBid(uint256 nounId) external payable override nonReentrant {
         INounsAuctionHouse.Auction memory _auction = auction;
 
-        require(_auction.nounId == nounId, 'Lil Noun not up for auction');
+        require(_auction.nounId == nounId, 'Lil Goblin not up for auction');
         require(block.timestamp < _auction.endTime, 'Auction expired');
         require(msg.value >= reservePrice, 'Must send at least reservePrice');
         require(

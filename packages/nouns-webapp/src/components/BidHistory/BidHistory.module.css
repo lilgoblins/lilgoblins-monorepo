@@ -12,7 +12,7 @@
 
 .bidRow {
   padding: 1rem;
-  border-bottom: 1px solid rgba(211, 211, 211, 0.322);
+  border-bottom: 1px solid rgba(1, 1, 1, 0.322);
 }
 
 .bidItem {
@@ -40,7 +40,7 @@
 }
 
 .bidDate {
-  color: gray;
+  color: black;
 }
 
 .rightSectionWrapper {
@@ -62,5 +62,5 @@
 }
 
 .linkSymbol a:hover {
-  color: gray;
+  color: black;
 }

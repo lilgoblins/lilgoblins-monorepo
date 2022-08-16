@@ -28,7 +28,7 @@ const getNoun = (nounId: string | EthersBN | number, seed: INounSeed) => {
   const name = `Noun ${id}`;
   const description = `Lil Noun ${id} is a member of the Lil Goblins DAO`;
   const { parts, background } = getNounData(seed);
-  const svg = buildSVG(parts, data.palette, background);
+  const svg = buildSVG(parts, data.palette, 'none');
   const image = `data:image/svg+xml;base64,${btoa(svg)}`;
 
   return {

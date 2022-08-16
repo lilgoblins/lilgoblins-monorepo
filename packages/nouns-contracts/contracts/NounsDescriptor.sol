@@ -288,9 +288,9 @@ contract NounsDescriptor is INounsDescriptor, Ownable {
      * @notice Given a token ID and seed, construct a base64 encoded data URI for an official Nouns DAO noun.
      */
     function dataURI(uint256 tokenId, INounsSeeder.Seed memory seed) public view override returns (string memory) {
-        string memory nounId = tokenId.toString();
-        string memory name = string(abi.encodePacked('Lil Noun ', nounId));
-        string memory description = string(abi.encodePacked('Lil Noun ', nounId, ' is a member of the Lil Goblins DAO'));
+        string memory goblinId = tokenId.toString();
+        string memory name = string(abi.encodePacked('Lil Goblin ', goblinId));
+        string memory description = string(abi.encodePacked('Lil Goblin ', goblinId, ' is a member of the Lil Goblins DAO'));
 
         return genericDataURI(name, description, seed);
     }

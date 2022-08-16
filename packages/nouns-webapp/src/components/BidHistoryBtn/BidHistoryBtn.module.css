@@ -13,7 +13,7 @@
   justify-content: center;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
-  color: var(--brand-cool-light-text);
+  /* color: var(--brand-cool-light-text); */
 }
 
 .bidHistoryWrapperWarm {
@@ -22,7 +22,7 @@
   justify-content: center;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
-  color: var(--brand-warm-light-text);
+  /* color: var(--brand-warm-light-text); */
 }
 
 .bidHistory {
@@ -36,7 +36,7 @@
 
 .bidHistoryWarm {
   margin-left: 0.5rem;
-  color: var(--brand-color-red);
+  /* color: var(--brand-color-red); */
   font-family: 'Blue Goblet';
   font-weight: bold;
   font-size: 1rem;
@@ -45,7 +45,7 @@
 
 .bidHistoryCool {
   margin-left: 0.5rem;
-  color: var(--brand-color-blue);
+  /* color: var(--brand-color-blue); */
   font-family: 'Blue Goblet';
   font-weight: bold;
   font-size: 1rem;
