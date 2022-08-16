@@ -10,7 +10,7 @@ export const externalURL = (externalURL: ExternalURL) => {
     case ExternalURL.discord:
       return 'https://discord.gg/xjARUcB3tJ';
     case ExternalURL.twitter:
-      return 'https://twitter.com/lilnounsdao';
+      return 'https://twitter.com/lilgoblinswtf';
     case ExternalURL.notion:
       return 'https://lilnouns.notion.site/Explore-Lil-Nouns-db990658e6ab4cf19121b22642645032';
     case ExternalURL.discourse:
