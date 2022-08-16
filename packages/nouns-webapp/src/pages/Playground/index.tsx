@@ -62,7 +62,8 @@ const traitKeyToTitle: Record<string, string> = {
   heads: 'head',
   glasses: 'glasses',
   bodies: 'body',
-  accessories: 'accessory',
+  ears: 'ear',
+  faces: 'face',
 };
 
 const parseTraitName = (partName: string): string =>
@@ -98,7 +99,7 @@ const Playground: React.FC = () => {
   );
 
   useEffect(() => {
-    const traitTitles = ['background', 'body', 'accessory', 'head', 'glasses'];
+    const traitTitles = ['background', 'body', 'ear', 'head', 'glasses', 'face'];
     const traitNames = [
       ['cool', 'warm'],
       ...Object.values(ImageData.images).map(i => {
@@ -251,7 +252,7 @@ const Playground: React.FC = () => {
             <span>Explore</span>
             <h1>Playground</h1>
             <p>
-              The playground was built using a fork of {nounsProtocolLink}. Lil Noun's traits are
+              The playground was built using a fork of {nounsProtocolLink}. Lil Goblin's traits are
               determined by the Noun Seed. The seed was generated using {nounsAssetsLink} and
               rendered using the {nounsSDKLink}.
             </p>
@@ -266,7 +267,7 @@ const Playground: React.FC = () => {
                 }}
                 className={classes.primaryBtn}
               >
-                Generate Lil Nouns
+                Generate Lil Goblins
               </Button>
             </Col>
             <Row>
@@ -352,7 +353,7 @@ const Playground: React.FC = () => {
             )}
             <p className={classes.nounYearsFooter}>
               You've generated {nounSvgs ? (nounSvgs.length / (96 * 365)).toFixed(5) : '0'} years
-              worth of Lil Nouns
+              worth of Lil Goblins
             </p>
           </Col>
           <Col lg={9}>
