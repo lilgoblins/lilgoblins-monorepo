@@ -1,7 +1,7 @@
 import classes from './Banner.module.css';
 import Section from '../../layout/Section';
 import Image from 'react-bootstrap/Image';
-import bannerImage from '../../assets/LilNounClassroom.png';
+// import bannerImage from '../../assets/LilNounClassroom.png';
 import banner2 from '../../assets/goblin/family.png';
 
 const Banner = () => {
@@ -17,7 +17,7 @@ const Banner = () => {
         </h1>
       </div>
       <div style={{ textAlign: 'center', padding: '2rem', paddingBottom: '8rem' }}>
-        <Image src={bannerImage} alt={'Banner Image'} fluid />
+        {/* <Image src={bannerImage} alt={'Banner Image'} fluid /> */}
         <Image src={banner2} alt={'Family'} fluid />
       </div>
     </Section>

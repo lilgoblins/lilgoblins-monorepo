@@ -20,7 +20,7 @@ interface AppConfig {
   enableRollbar: boolean;
 }
 
-type SupportedChains = ChainId.Rinkeby | ChainId.Mainnet | ChainId.Hardhat;
+type SupportedChains = ChainId.Mainnet;
 
 export const CHAIN_ID: SupportedChains = parseInt(process.env.REACT_APP_CHAIN_ID ?? '1');
 
@@ -35,7 +35,7 @@ export const createNetworkHttpUrl = (network: string): string => {
   if (network === 'goerli') {
     return custom || `https://eth-mainnet.g.alchemy.com/v2/06ijGb0mR4IObNvIRJLK_jQqla4hPpK8`;
   } else {
-    return custom || `https://eth-mainnet.alchemyapi.io/v2/tEAmLPls4-IajaZM2nyTIfG6CqK_uAb0`;
+    return custom || `https://eth-mainnet.g.alchemy.com/v2/06ijGb0mR4IObNvIRJLK_jQqla4hPpK8`;
   }
 };
 
@@ -45,22 +45,11 @@ export const createNetworkWsUrl = (network: string): string => {
   if (network === 'goerli') {
     return custom || `wss://eth-mainnet.g.alchemy.com/v2/06ijGb0mR4IObNvIRJLK_jQqla4hPpK8`;
   } else {
-    return custom || 'wss://eth-mainnet.alchemyapi.io/v2/tEAmLPls4-IajaZM2nyTIfG6CqK_uAb0';
+    return custom || 'wss://eth-mainnet.g.alchemy.com/v2/06ijGb0mR4IObNvIRJLK_jQqla4hPpK8';
   }
 };
 
 const app: Record<SupportedChains, AppConfig> = {
-  [ChainId.Rinkeby]: {
-    jsonRpcUri: createNetworkHttpUrl('rinkeby'),
-    wsRpcUri: createNetworkWsUrl('rinkeby'),
-    subgraphApiUri:
-      'https://api.thegraph.com/subgraphs/name/lilnounsdao/lil-nouns-subgraph-rinkeby',
-    nounsDAOSubgraphApiUri:
-      'https://api.thegraph.com/subgraphs/name/nounsdao/nouns-subgraph-rinkeby',
-    enableHistory: process.env.REACT_APP_ENABLE_HISTORY === 'true',
-    nounsApiUri: process.env[`REACT_APP_RINKEBY_NOUNSAPI`] || '',
-    enableRollbar: process.env.REACT_APP_ENABLE_ROLLBAR === 'true',
-  },
   [ChainId.Mainnet]: {
     jsonRpcUri: createNetworkHttpUrl('mainnet'),
     wsRpcUri: createNetworkWsUrl('mainnet'),
@@ -70,26 +59,11 @@ const app: Record<SupportedChains, AppConfig> = {
     nounsApiUri: process.env[`REACT_APP_MAINNET_NOUNSAPI`] || '',
     enableRollbar: process.env.REACT_APP_ENABLE_ROLLBAR === 'true',
   },
-  [ChainId.Hardhat]: {
-    jsonRpcUri: 'http://localhost:8545',
-    wsRpcUri: 'ws://localhost:8545',
-    subgraphApiUri: '',
-    nounsDAOSubgraphApiUri: '',
-    enableHistory: false,
-    nounsApiUri: 'http://localhost:5001',
-    enableRollbar: false,
-  },
 };
 
 const externalAddresses: Record<SupportedChains, ExternalContractAddresses> = {
-  [ChainId.Rinkeby]: {
-    lidoToken: '0xF4242f9d78DB7218Ad72Ee3aE14469DBDE8731eD',
-  },
   [ChainId.Mainnet]: {
     lidoToken: '0xae7ab96520DE3A18E5e111B5EaAb095312D7fE84',
-  },
-  [ChainId.Hardhat]: {
-    lidoToken: undefined,
   },
 };
 
