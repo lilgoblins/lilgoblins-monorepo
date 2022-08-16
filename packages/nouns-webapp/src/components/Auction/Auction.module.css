@@ -17,6 +17,8 @@
   padding-bottom: 0rem;
   min-height: 520px;
   align-self: flex-end !important;
+  position: relative;
+  z-index: 1;
 }
 
 .bg {
@@ -72,6 +74,8 @@
     padding-left: 5%;
     width: 100%;
     background-color: white;
+    position: relative;
+    z-index: 1;
   }
   .mobile {
     display: block;
@@ -91,6 +95,8 @@
     padding-top: 2rem;
     padding-right: unset;
     padding-left: 0;
+    position: relative;
+    z-index: 1;
   }
 
   .nounWrapper {
