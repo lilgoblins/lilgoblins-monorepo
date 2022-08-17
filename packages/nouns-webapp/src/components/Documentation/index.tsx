@@ -120,7 +120,7 @@ const Documentation = () => {
                 <br />
                 <br />
                 Settlement gas price of every 9th Lil Goblin is higher. This is due to the transaction
-                also triggering 2 free Lil Goblin mints: The Lil Goblinders mint and The Nouns DAO mint.
+                also triggering 1 free Lil Goblin mint to The Lil Goblinders.
               </p>
             </Accordion.Body>
           </Accordion.Item>

@@ -36,7 +36,7 @@ const InfoModalOverlay: React.FC<{
             <br />
             <br />
             Settlement gas price of every 9th Lil Goblin is higher. This is due to the transaction
-            also triggering 2 free Lil Goblin mints: The Lil Goblin Kings mint and The Goblins DAO mint.
+            also triggering 1 free Lil Goblin mint to The Lil Goblin Kings.
             <br />
             <br />
             <div className={classes.headers}>Bids</div>
