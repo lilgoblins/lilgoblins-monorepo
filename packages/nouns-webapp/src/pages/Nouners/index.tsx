@@ -2,7 +2,7 @@ import React from 'react';
 import classes from './NounersPage.module.css';
 import Section from '../../layout/Section';
 import { Col, Row, Image, Button } from 'react-bootstrap';
-import banner_image from '../../assets/LilNounClassroomEmpty.png';
+import banner_image from '../../assets/crowd.png';
 
 const NounersPage = () => {
   return (
