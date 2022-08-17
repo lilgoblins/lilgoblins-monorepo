@@ -26,7 +26,7 @@ import { IProxyRegistry } from './external/opensea/IProxyRegistry.sol';
 contract PoopToken is IPoopToken, Ownable, ERC1155 {
     string public name = "Lil Goblin Poop";
 
-    // The lilnounders DAO address (creators org)
+    // The lilgoblinkings DAO address (creators org)
     address public lilgoblinkings;
 
     // An address who has permissions to mint Poops
@@ -115,7 +115,7 @@ contract PoopToken is IPoopToken, Ownable, ERC1155 {
 
     /**
      * @notice Set the lil nounders DAO.
-     * @dev Only callable by the lilnounders DAO when not locked.
+     * @dev Only callable by the lilgoblinkings DAO when not locked.
      */
     function setLilGoblinKings(address _lilgoblinkings) external override onlyLilGoblinKings {
         lilgoblinkings = _lilgoblinkings;

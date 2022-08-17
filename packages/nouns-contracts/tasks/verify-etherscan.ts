@@ -99,7 +99,7 @@ const contracts: Record<ContractName, VerifyArgs> = {
     constructorArguments: [
       '0xDC55b504D121A2B19C77247Bf23B0dAe5F07B705', // nounsDaoExecutor
       '0x28fD525153Bdc46d868Fe90aE5303cE0b3Ef6922', // nounsToken
-      lilgoblinkings, // lilnounders dao multisig
+      lilgoblinkings, // lilgoblinkings dao multisig
       '0xDC55b504D121A2B19C77247Bf23B0dAe5F07B705', // nounsDaoExecutor
       '0x1316c44D62e0dEA71E2C7221C99e1dE4C64d6b27', // nounsDAOLogicV1
       33230, // voting-period 

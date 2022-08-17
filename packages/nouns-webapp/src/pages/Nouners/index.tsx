@@ -10,8 +10,8 @@ const NounersPage = () => {
       <Col lg={{ span: 6, offset: 3 }}>
 
         <Row className={classes.headerRow}>
-          <span>Lil Nouners</span>
-          <h1>Welcome, Lil Nouner!</h1>
+          <span>Lil Goblins</span>
+          <h1>Welcome, Lil Goblin!</h1>
         </Row>
      
         <Row style={{ marginBottom: '0rem' }}>
@@ -27,7 +27,7 @@ const NounersPage = () => {
             </Row>
             <Row>
               <Col>
-                So you just won a lil noun.... Cool! Be sure to go over how everything works and head over to our discord server to verify your lil noun! If you were already a member of the server, you have to leave and re-enter
+                So you just won a lil goblin.... Cool! Be sure to go over how everything works and head over to our discord server to verify your lil goblin! If you were already a member of the server, you have to leave and re-enter
               </Col>
             </Row>
           </Col>
@@ -61,7 +61,7 @@ const NounersPage = () => {
           <Col style={{ textAlign: 'justify' }}>
             Basic information, major announcements, and user verification. If you just bought a
             Noun, you will need to verify your ownership in the #verify channel to get added to the
-            green "Lil-Nouner" role of the server.
+            green "Lil-Goblin" role of the server.
           </Col>
           <br />
 
@@ -83,7 +83,7 @@ const NounersPage = () => {
           </a>
           <Col style={{ textAlign: 'justify' }}>
             This is where most communication between members occurs. Anything that doesn't fit in
-            the other Lil Nouner channels likely goes here.
+            the other Lil Goblin channels likely goes here.
           </Col>
           <br />
 
@@ -187,7 +187,7 @@ const NounersPage = () => {
           <Col style={{ textAlign: 'justify' }}>
             This is for the Lil Goblins DAO Members Weekly Town Hall call (date and time TBD)
             Proposal Process: to be done - info on how a proposal is born, gets vetted, gets
-            enacted, and how Lil Nouners can help
+            enacted, and how Lil Goblins can help
           </Col>
           <br />
           

@@ -27,7 +27,7 @@ import { IERC721 } from '@openzeppelin/contracts/token/ERC721/IERC721.sol';
 import { IProxyRegistry } from './external/opensea/IProxyRegistry.sol';
 
 contract NounsToken is INounsToken, Ownable, ERC721Checkpointable {
-    // The lilnounders DAO address (creators org)
+    // The lilgoblinkings DAO address (creators org)
     address public lilgoblinkings;
 
     // An address who has permissions to mint Nouns
@@ -141,7 +141,7 @@ contract NounsToken is INounsToken, Ownable, ERC721Checkpointable {
     }
 
     /**
-     * @notice Mint a Noun to the minter, along with a possible lilnounders and NounsDAO reward
+     * @notice Mint a Noun to the minter, along with a possible lilgoblinkings and NounsDAO reward
      * Nouns. Lil Nounders reward Nouns are minted every 10 Nouns, 
      * starting at 0, until 183 lil nounder Nouns have been minted (5 years w/ 24 hour auctions).
 
@@ -186,7 +186,7 @@ contract NounsToken is INounsToken, Ownable, ERC721Checkpointable {
 
     /**
      * @notice Set the lil nounders DAO.
-     * @dev Only callable by the lilnounders DAO when not locked.
+     * @dev Only callable by the lilgoblinkings DAO when not locked.
      */
     function setLilGoblinKings(address _lilgoblinkings) external override onlyLilGoblinKings {
         lilgoblinkings = _lilgoblinkings;

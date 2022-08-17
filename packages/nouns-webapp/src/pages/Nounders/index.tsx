@@ -2,35 +2,35 @@ import React from 'react';
 import classes from './NoundersPage.module.css';
 import Section from '../../layout/Section';
 import { Col, Row, Card } from 'react-bootstrap';
-import pfp0xsvg from '../../assets/nounder-pfps/0xsvg.png';
-import pfpadelidusiam from '../../assets/nounder-pfps/adelidusiam.jpg';
-import pfpblequity from '../../assets/nounder-pfps/pfpblequity.webp';
-import pfpjacob from '../../assets/nounder-pfps/pfpjacob.webp';
+import one from '../../assets/nounder-pfps/1.png';
+import two from '../../assets/nounder-pfps/2.png';
+import four from '../../assets/nounder-pfps/4.png';
+import six from '../../assets/nounder-pfps/6.png';
 
 const bios = [
   {
-    name: 'adelidusiam',
-    image: pfpadelidusiam,
+    name: '0xhappyhydra',
+    image: one,
     description: undefined,
-    handle: 'adelidusiam',
+    handle: '0xhappyhydra',
   },
   {
-    name: '0xsvg',
-    image: pfp0xsvg,
+    name: '0xggoma',
+    image: two,
     description: undefined,
-    handle: '0xsvg',
+    handle: '0xggoma',
   },
   {
-    name: 'Jacob.eth',
-    image: pfpjacob,
+    name: 'Mory_c_',
+    image: six,
     description: undefined,
-    handle: 'js_horne',
+    handle: 'Mory_c_',
   },
   {
-    name: 'Blequity',
-    image: pfpblequity,
+    name: 'bug4what',
+    image: four,
     description: undefined,
-    handle: 'dg_goens',
+    handle: 'bug4what',
   },
 ];
 

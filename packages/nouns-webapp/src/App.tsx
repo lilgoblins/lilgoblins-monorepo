@@ -115,8 +115,8 @@ function App() {
           {isPreLaunch ? (
             <Switch>
               <Route exact path="/" component={PreLaunch} />
-              <Route exact path="/lilnounders" component={NoundersPage} />
-              <Route exact path="/lilnouners" component={NounersPage} />
+              <Route exact path="/lilgoblinkings" component={NoundersPage} />
+              <Route exact path="/lilgoblins" component={NounersPage} />
               <Route exact path="/playground" component={Playground} />
               <Route exact path="/nouniverse/:id" component={Nouniverse} />
               <Route exact path="/nouniverse" component={Nouniverse} />
@@ -130,8 +130,8 @@ function App() {
                 path="/lilgoblin/:id"
                 render={props => <AuctionPage initialAuctionId={Number(props.match.params.id)} />}
               />
-              <Route exact path="/lilnounders" component={NoundersPage} />
-              <Route exact path="/lilnouners" component={NounersPage} />
+              <Route exact path="/lilgoblinkings" component={NoundersPage} />
+              <Route exact path="/lilgoblins" component={NounersPage} />
               <Route exact path="/create-proposal" component={CreateProposalPage} />
               <Route exact path="/vote" component={GovernancePage} />
               <Route exact path="/ideas" component={IdeasPage} />

@@ -40,8 +40,8 @@ const nounsProtocolLink = (
 
 const nounsAssetsLink = (
   <Link
-    text="lilnouns-assets"
-    url="https://github.com/lilnounsDAO/lilnouns-monorepo/tree/master/packages/nouns-assets"
+    text="lilgoblins-assets"
+    url="https://github.com/lilgoblins/lilgoblins-monorepo/tree/main/packages/nouns-assets"
     leavesPage={true}
   />
 );
@@ -49,7 +49,7 @@ const nounsAssetsLink = (
 const nounsSDKLink = (
   <Link
     text="nouns-sdk"
-    url="https://github.com/lilnounsDAO/lilnouns-monorepo/tree/master/packages/nouns-sdk"
+    url="https://github.com/lilgoblins/lilgoblins-monorepo/tree/main/packages/nouns-sdk"
     leavesPage={true}
   />
 );

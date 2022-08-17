@@ -37,7 +37,7 @@ const Winner: React.FC<WinnerProps> = props => {
       </Col>
       {!isMobile && (
         <Col>
-          <Link to="/lilnouners">
+          <Link to="/lilgoblins">
             <Button className={classes.verifyButton}>What now?</Button>
           </Link>
         </Col>
@@ -80,7 +80,7 @@ const Winner: React.FC<WinnerProps> = props => {
       </Row>
       {isWinnerYou && isMobile && (
         <Row>
-          <Link to="/lilnouners">
+          <Link to="/lilgoblins">
             <Button className={classes.verifyButton}>What now?</Button>
           </Link>
         </Row>
