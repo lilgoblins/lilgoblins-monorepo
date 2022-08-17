@@ -20,7 +20,9 @@
   padding-left: 5px;
 }
 .bioGroup a {
-  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
 }
 
 .noundersPage img {
@@ -44,7 +46,8 @@
 }
 
 .twitterIcon {
-  width: 20px;
+  width: auto;
+  height: 16px;
   color: #aaa;
   margin-right: 5px;
 }
