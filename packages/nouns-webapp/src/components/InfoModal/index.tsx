@@ -40,7 +40,7 @@ const InfoModalOverlay: React.FC<{
             <br />
             <br />
             <div className={classes.headers}>Bids</div>
-            Once an auction starts, everyone has 15 minutes to bid. Anyone can bid an amount
+            Once an auction starts, everyone has an hour to bid. Anyone can bid an amount
             at/above 0.01 eth. The Amount bid is returned to bidder if they lose the auction (minus
             gas spent on bid transaction).
             <br />
