@@ -12,7 +12,7 @@ task('populate-descriptor', 'Populates the descriptor with color palettes and No
   .addOptionalParam(
     'nounsDescriptor',
     'The `NounsDescriptor` contract address',
-    '0x1197Ec597045403bBae28B72488eB952C71705F3',
+    '0x8233e07e26d3F8DaA6B9CAdFd96FDAcF9C2F9D49',
     types.string,
   )
   .setAction(async ({ nftDescriptor, nounsDescriptor }, { ethers }) => {
@@ -33,22 +33,27 @@ task('populate-descriptor', 'Populates the descriptor with color palettes and No
 
     console.log("adding palette")
     await descriptorContract.addManyColorsToPalette(0, palette);
+    console.log("waiting")
     await new Promise(f => setTimeout(f, 10000));
 
     console.log("adding bodies")
     await descriptorContract.addManyBodies(bodies.map(({ data }) => data));
+    console.log("waiting")
     await new Promise(f => setTimeout(f, 10000));
 
     console.log("adding ears")
     await descriptorContract.addManyEars(ears.map(({ data }) => data));
+    console.log("waiting")
     await new Promise(f => setTimeout(f, 10000));
 
     console.log("adding heads")
     await descriptorContract.addManyHeads(heads.map(({ data }) => data));
+    console.log("waiting")
     await new Promise(f => setTimeout(f, 10000));
 
     console.log("adding glasses")
     await descriptorContract.addManyGlasses(glasses.map(({ data }) => data));
+    console.log("waiting")
     await new Promise(f => setTimeout(f, 10000));
 
     console.log("adding faces")

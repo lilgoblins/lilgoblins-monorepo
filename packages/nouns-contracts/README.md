@@ -170,3 +170,7 @@ Estimated cost to deploy NounsDAOProxy: 0.008706992 ETH
 > Type "DEPLOY" to confirm: Deploy
 NounsDAOProxy contract deployed to 0x152f2CcD58266451DC03f89023dEA2bf167245B9
 ✨  Done in 16.25s.
+
+
+remixd -s ./ --remix-ide https://remix.ethereum.org
+
