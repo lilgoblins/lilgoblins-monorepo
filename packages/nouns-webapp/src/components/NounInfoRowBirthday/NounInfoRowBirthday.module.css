@@ -5,7 +5,9 @@
 }
 
 .birthdayInfoContainer {
-  display: inline;
+  display: flex;
+  align-items: center;
+  /* display: inline; */
   width: 250px;
   height: 25px;
 }

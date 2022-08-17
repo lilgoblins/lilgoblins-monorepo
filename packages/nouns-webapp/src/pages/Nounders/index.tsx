@@ -46,7 +46,12 @@ const BioCard: React.FC<{
       <Card.Img variant="top" src={image} />
       <Card.Title>
         {handle && (
-          <a href={`https://twitter.com/${handle}`} target="_blank" rel="noreferrer">
+          <a
+            className={classes.link}
+            href={`https://twitter.com/${handle}`}
+            target="_blank"
+            rel="noreferrer"
+          >
             <svg
               fill="currentColor"
               viewBox="0 0 20 20"
@@ -59,7 +64,7 @@ const BioCard: React.FC<{
                 data-v-6cab4e66=""
               ></path>
             </svg>
-            {name}
+            @{name}
           </a>
         )}
 
@@ -95,9 +100,9 @@ const NoundersPage = () => {
         <h3>Lil Goblin Kings' Reward</h3>
         <p style={{ textAlign: 'justify' }}>
           All Lil Goblin auction proceeds are sent to the Lil Goblins DAO. For this reason, we, the
-          project's founders (‘Lil Goblin Kings’) have chosen to compensate ourselves with Lil Goblins.
-          Every 10th noun for the first 5 years of the project will be sent to our multisig, where
-          it will be vested and distributed to individual Lil Goblin Kings.
+          project's founders (‘Lil Goblin Kings’) have chosen to compensate ourselves with Lil
+          Goblins. Every 10th noun for the first 5 years of the project will be sent to our
+          multisig, where it will be vested and distributed to individual Lil Goblin Kings.
         </p>
         <p style={{ textAlign: 'justify' }}>
           The Lil Goblin Kings reward is intended as compensation for our pre and post-launch
