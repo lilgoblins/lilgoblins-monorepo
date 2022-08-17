@@ -30,6 +30,7 @@ const NounInfoRowHolder: React.FC<NounInfoRowHolderProps> = props => {
       </div>
     );
   } else if (error) {
+    console.log("ERROR: ", error)
     return <div>Failed to fetch noun info</div>;
   }
 

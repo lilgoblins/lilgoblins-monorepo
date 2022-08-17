@@ -11,7 +11,7 @@ export const config = {
 
   nounsSubgraph:
     process.env.NOUNS_SUBGRAPH_URL ??
-    "https://api.thegraph.com/subgraphs/name/lilnounsdao/lil-nouns-subgraph",
+    "https://api.thegraph.com/subgraphs/name/keon/lilgoblins",
 
   twitterEnabled: process.env.TWITTER_ENABLED === 'true',
   twitterAppKey: process.env.TWITTER_APP_KEY ?? '',
