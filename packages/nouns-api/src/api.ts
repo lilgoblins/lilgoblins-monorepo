@@ -59,7 +59,7 @@ export const createAPI = (): Express => {
         'https://master--frosty-hugle-07297b.netlify.app',
         'https://staging--frosty-hugle-07297b.netlify.app',
         'https://production--frosty-hugle-07297b.netlify.app',
-        'https://lilnouns.wtf',
+        'https://lilgoblins.wtf',
         ...(config.environment === 'development' ? ['http://localhost:3000'] : []),
       ],
       methods: ['GET', 'PUT', 'POST', 'DELETE', 'OPTIONS'],

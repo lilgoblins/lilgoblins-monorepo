@@ -137,7 +137,7 @@ const NounersPage = () => {
             When a project passes an on-chain vote, the creator of that proposal will often be given
             their own channel in this section to answer questions and share updates on the status of
             their work. This is a constantly expanding list - for more information on each of these,
-            check out the DAO section of the Lil Nouns website.
+            check out the DAO section of the Lil Goblins website.
           </Col>
           <br />
 

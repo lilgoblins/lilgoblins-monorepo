@@ -87,20 +87,20 @@ const NoundersPage = () => {
   return (
     <Section fullWidth={true} className={classes.noundersPage}>
       <Col lg={{ span: 6, offset: 3 }}>
-        <h2 style={{ marginBottom: '2rem' }}>The Lil Nounders</h2>
+        <h2 style={{ marginBottom: '2rem' }}>The Lil Goblin Kings</h2>
         <Row style={{ marginBottom: '0rem' }}>
           <BioCards min={0} max={5} />
           <BioCards min={5} max={10} />
         </Row>
-        <h3>Lil Nounders' Reward</h3>
+        <h3>Lil Goblin Kings' Reward</h3>
         <p style={{ textAlign: 'justify' }}>
-          All Lil Noun auction proceeds are sent to the Lil Goblins DAO. For this reason, we, the
-          project's founders (‘Lil Nounders’) have chosen to compensate ourselves with Lil Nouns.
+          All Lil Goblin auction proceeds are sent to the Lil Goblins DAO. For this reason, we, the
+          project's founders (‘Lil Goblin Kings’) have chosen to compensate ourselves with Lil Goblins.
           Every 10th noun for the first 5 years of the project will be sent to our multisig, where
-          it will be vested and distributed to individual Lil Nounders.
+          it will be vested and distributed to individual Lil Goblin Kings.
         </p>
         <p style={{ textAlign: 'justify' }}>
-          The Lil Nounders reward is intended as compensation for our pre and post-launch
+          The Lil Goblin Kings reward is intended as compensation for our pre and post-launch
           contributions to the project, and to help us participate meaningfully in governance as the
           project matures.
         </p>

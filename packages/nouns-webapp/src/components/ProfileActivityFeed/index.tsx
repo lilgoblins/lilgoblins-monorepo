@@ -138,7 +138,7 @@ const ProfileActivityFeed: React.FC<ProfileActivityFeedProps> = props => {
           </>
         ) : (
           <div className={classes.nullStateCopy}>
-            This Lil Noun has no activity, since it was just created. Check back soon!
+            This Lil Goblin has no activity, since it was just created. Check back soon!
           </div>
         )}
       </Col>

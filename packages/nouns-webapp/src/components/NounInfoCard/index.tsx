@@ -50,7 +50,7 @@ const NounInfoCard: React.FC<NounInfoCardProps> = props => {
 
     const downloadEl = document.createElement('a');
     downloadEl.href = png;
-    downloadEl.download = `lilnoun-${nounId}.png`;
+    downloadEl.download = `lilgoblin-${nounId}.png`;
     downloadEl.click();
   }, [noun, nounId]);
 

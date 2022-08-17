@@ -31,12 +31,12 @@ const InfoModalOverlay: React.FC<{
             </div>
             <div className={classes.headerText}>Settlement</div>
             Anyone can settle an auction. When an auction ends, a gas-only transaction is required
-            to start the next auction and mint the current Lil Noun to the winners wallet. As gas
+            to start the next auction and mint the current Lil Goblin to the winners wallet. As gas
             price fluctuates, the cost of settlement also fluctuates.
             <br />
             <br />
-            Settlement gas price of every 9th Lil Noun is higher. This is due to the transaction
-            also triggering 2 free Lil Noun mints: The Lil Nounders mint and The Nouns DAO mint.
+            Settlement gas price of every 9th Lil Goblin is higher. This is due to the transaction
+            also triggering 2 free Lil Goblin mints: The Lil Goblin Kings mint and The Goblins DAO mint.
             <br />
             <br />
             <div className={classes.headers}>Bids</div>

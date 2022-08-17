@@ -48,7 +48,7 @@ const Documentation = () => {
                 </li>
                 <li>Settlement of one auction kicks off the next.</li>
                 <li>All Lil Goblins are members of Lil Goblins DAO.</li>
-                <li>Lil Goblins DAO is backed by Lil Nouns via Small Grants.</li>
+                <li>Lil Goblins DAO is backed by Nouns and Lil Nouns via Small Grants.</li>
                 <li>Lil Goblins DAO uses Nouns DAO’s fork of  {compoundGovLink}.</li>
                 <li>One Lil Goblin is equal to one vote.</li>
                 <li>The treasury is controlled exclusively by Lil Goblins via governance.</li>

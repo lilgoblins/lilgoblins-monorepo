@@ -5,7 +5,7 @@ import classes from './Ideas.module.css';
 
 const IdeasPage = () => {
   const nounsRequired = 1;
-  const nounThresholdCopy = `${nounsRequired} Lil Noun`;
+  const nounThresholdCopy = `${nounsRequired} Lil Goblin`;
 
   return (
     <Section fullWidth={false} className={classes.section}>

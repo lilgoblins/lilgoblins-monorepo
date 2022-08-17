@@ -25,8 +25,8 @@ interface StandaloneNounWithSeedProps {
 
 const getNoun = (nounId: string | EthersBN | number, seed: INounSeed) => {
   const id = nounId.toString();
-  const name = `Noun ${id}`;
-  const description = `Lil Noun ${id} is a member of the Lil Goblins DAO`;
+  const name = `Goblin ${id}`;
+  const description = `Lil Goblin ${id} is a member of the Lil Goblins DAO`;
   const { parts, background } = getNounData(seed);
   const svg = buildSVG(parts, data.palette, 'none');
   const image = `data:image/svg+xml;base64,${btoa(svg)}`;
@@ -62,7 +62,7 @@ const StandaloneNoun: React.FC<StandaloneNounProps> = (props: StandaloneNounProp
       className={classes.clickableNoun}
       onClick={onClickHandler}
     >
-      <Noun imgPath={noun ? noun.image : ''} alt={noun ? noun.description : 'Lil Noun'} />
+      <Noun imgPath={noun ? noun.image : ''} alt={noun ? noun.description : 'Lil Goblin'} />
     </Link>
   );
 };
@@ -87,7 +87,7 @@ export const StandaloneNounCircular: React.FC<StandaloneCircularNounProps> = (
     >
       <Noun
         imgPath={noun ? noun.image : ''}
-        alt={noun ? noun.description : 'Lil Noun'}
+        alt={noun ? noun.description : 'Lil Goblin'}
         wrapperClassName={nounClasses.circularNounWrapper}
         className={nounClasses.circular}
       />
@@ -115,7 +115,7 @@ export const StandaloneNounRoundedCorners: React.FC<StandaloneNounProps> = (
     >
       <Noun
         imgPath={noun ? noun.image : ''}
-        alt={noun ? noun.description : 'Lil Noun'}
+        alt={noun ? noun.description : 'Lil Goblin'}
         className={nounClasses.rounded}
       />
     </Link>
@@ -130,7 +130,7 @@ export const StandaloneNounWithSeed: React.FC<StandaloneNounWithSeedProps> = (
   const dispatch = useDispatch();
   const seed = useNounSeed(nounId);
 
-  if (!seed || !nounId || !onLoadSeed) return <Noun imgPath="" alt="Lil Noun" />;
+  if (!seed || !nounId || !onLoadSeed) return <Noun imgPath="" alt="Lil Goblin" />;
 
   onLoadSeed(seed);
 
@@ -170,7 +170,7 @@ export const StandaloneBigNounCircular: React.FC<StandaloneCircularNounProps> = 
       <Noun
         isBigNoun={true}
         imgPath={''}
-        alt={'Lil Noun'}
+        alt={'Lil Goblin'}
         wrapperClassName={nounClasses.circularNounWrapper}
         className={nounClasses.circular}
       />

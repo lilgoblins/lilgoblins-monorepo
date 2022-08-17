@@ -37,7 +37,7 @@ const BidHistoryModalOverlay: React.FC<{
 
             <div className={classes.title}>
               <h2>Bids for</h2>
-              <h1>Lil Noun {auction && auction.nounId.toString()}</h1>
+              <h1>Lil Goblin {auction && auction.nounId.toString()}</h1>
             </div>
           </div>
           <div className={classes.bidWrapper}>

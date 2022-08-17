@@ -22,7 +22,7 @@ const Ideas = () => {
 
   const nullStateCopy = () => {
     if (Boolean(account)) {
-      return 'You have no Lil Nouns.';
+      return 'You have no Lil Goblins.';
     }
     return 'Connect wallet to submit an idea.';
   };
