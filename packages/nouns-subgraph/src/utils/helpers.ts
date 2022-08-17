@@ -3,8 +3,8 @@ import { ZERO_ADDRESS, BIGINT_ZERO, BIGINT_ONE } from './constants';
 
 export function getOrCreateAccount(
   id: string,
-  createIfNotFound = true,
-  save = true,
+  createIfNotFound = true, 
+  save = true, 
 ): Account {
   let tokenHolder = Account.load(id);
 

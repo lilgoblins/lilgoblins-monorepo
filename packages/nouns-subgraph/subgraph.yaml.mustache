@@ -34,36 +34,6 @@ dataSources:
         - event: AuctionSettled(indexed uint256,address,uint256)
           handler: handleAuctionSettled
   - kind: ethereum/contract
-    name: NounsToken
-    network: {{network}}
-    source:
-      address: '{{nounsToken.address}}'
-      abi: NounsToken
-      startBlock: {{nounsToken.startBlock}}
-    mapping:
-      kind: ethereum/events
-      apiVersion: 0.0.4
-      language: wasm/assemblyscript
-      file: ./src/nouns-erc-721.ts
-      entities:
-        - Noun
-        - Seed
-        - Account
-        - Delegate
-        - Governance
-      abis:
-        - name: NounsToken
-          file: ../nouns-contracts/abi/contracts/NounsToken.sol/NounsToken.json
-      eventHandlers:
-        - event: NounCreated(indexed uint256,(uint48,uint48,uint48,uint48,uint48,uint48))
-          handler: handleNounCreated
-        - event: DelegateChanged(indexed address,indexed address,indexed address)
-          handler: handleDelegateChanged
-        - event: DelegateVotesChanged(indexed address,uint256,uint256)
-          handler: handleDelegateVotesChanged
-        - event: Transfer(indexed address,indexed address,indexed uint256)
-          handler: handleTransfer
-  - kind: ethereum/contract
     name: NounsDAO
     network: {{network}}
     source:
