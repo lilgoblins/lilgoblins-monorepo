@@ -376,7 +376,7 @@ contract NounsDescriptor is INounsDescriptor, Ownable {
      * @notice Get all Noun parts for the passed `seed`.
      */
     function _getPartsForSeed(INounsSeeder.Seed memory seed) internal view returns (bytes[] memory) {
-        bytes[] memory _parts = new bytes[](4);
+        bytes[] memory _parts = new bytes[](5);
         _parts[0] = bodies[seed.body];
         _parts[1] = ears[seed.ear];
         _parts[2] = heads[seed.head];

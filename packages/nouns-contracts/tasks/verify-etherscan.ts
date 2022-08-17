@@ -50,7 +50,7 @@ const contracts: Record<ContractName, VerifyArgs> = {
     address: '0x0fd3Fb251E1112e46efD8c0da199E6245FaE1F77',
   },
   NounsDescriptor: {
-    address: '0x1197Ec597045403bBae28B72488eB952C71705F3',
+    address: '0x8233e07e26d3F8DaA6B9CAdFd96FDAcF9C2F9D49',
     libraries: {
       NFTDescriptor: '0x0fd3Fb251E1112e46efD8c0da199E6245FaE1F77',
     },
