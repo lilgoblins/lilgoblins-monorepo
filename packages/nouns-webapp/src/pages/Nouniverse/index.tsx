@@ -117,7 +117,7 @@ const NouniversePage = () => {
 
           <Col className={classes.treasuryInfoText}>
             <div className={classes.verifyButtonWrapper}>
-              <a href={`https://discord.gg/xjARUcB3tJ`}>
+              <a href={`https://discord.gg/Attgsp9TTM`}>
                 <Button className={classes.generateBtn}>Join Discord</Button>
               </a>
             </div>
