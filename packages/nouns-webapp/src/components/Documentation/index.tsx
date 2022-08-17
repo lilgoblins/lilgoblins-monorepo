@@ -23,11 +23,11 @@ const Documentation = () => {
         <div className={classes.headerWrapper}>
           <h1>WTF?</h1>
           <p className={classes.aboutText}>
-            Lil Goblins are just like Nouns, but Lil!
+            Lil Goblins DAO is cc0 collector DAO with goblinish auction mechanism
             <br />
             <br />
             An expansion DAO based on {nounsDao}, Lil Goblins DAO works to create a new layer within
-            the Nouns ecosystem; Nouns as kids. By expanding the ecosystem, Lil Goblins DAO aims at
+            the Nouns ecosystem; Goblin CC0 Collectors. By expanding the ecosystem, Lil Goblins DAO aims at
             exposing more people to Nouns.
           </p>
           <p className={classes.aboutText} style={{ paddingBottom: '4rem' }}>
