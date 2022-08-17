@@ -27,7 +27,8 @@
 }
 
 .nounHolderInfoContainer {
-  display: inline;
+  display: flex;
+  align-items: center;
   width: 350px;
   height: 35px;
 }
