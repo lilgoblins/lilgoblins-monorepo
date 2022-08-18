@@ -11,9 +11,10 @@ export interface NormalizedVote {
 export interface Seed {
   background: number;
   body: number;
-  accessory: number;
+  ear: number;
   head: number;
   glasses: number;
+  face: number;
 }
 
 export interface NormalizedNoun {

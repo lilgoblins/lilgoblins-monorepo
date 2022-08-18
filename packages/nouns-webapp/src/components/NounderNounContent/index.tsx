@@ -114,7 +114,7 @@ const NounderNounContent: React.FC<{
             className={`${auctionActivityClasses.currentBidCol} ${nounContentClasses.currentBidCol} ${auctionActivityClasses.auctionTimerCol}`}
           >
             <div className={auctionActivityClasses.section}>
-              <Winner winner={''} isNounders={isNoundersNoun} isNounsDAO={isNounsDAONoun} />
+              <Winner winner={''} isNounders={isNoundersNoun} isNounsDAO={false} />
             </div>
           </Col>
         </Row>
