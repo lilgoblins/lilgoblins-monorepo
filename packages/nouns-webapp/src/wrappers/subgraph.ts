@@ -60,9 +60,10 @@ export const auctionQuery = (auctionId: number) => gql`
 		  id
 		  background
 		  body
-		  accessory
+		  ear
 		  head
 		  glasses
+      face
 		}
 		owner {
 		  id
@@ -103,9 +104,10 @@ export const nounQuery = (id: string) => gql`
 	  seed {
 	  background
 		body
-		accessory
+		ear
 		head
 		glasses
+    face
 	}
 	  owner {
 		id

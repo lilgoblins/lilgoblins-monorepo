@@ -44,9 +44,10 @@ const nounsGql = `
     seed {
       background
       body
-      accessory
+      ear
       head
       glasses
+      face
     }
   }
 }
@@ -60,9 +61,10 @@ export const normalizeVote = (vote: any): NormalizedVote => ({
 export const normalizeSeed = (seed: any): Seed => ({
   background: Number(seed.background),
   body: Number(seed.body),
+  ear: Number(seed.ear),
   glasses: Number(seed.glasses),
-  accessory: Number(seed.accessory),
   head: Number(seed.head),
+  face: Number(seed.face),
 });
 
 export const normalizeNoun = (noun: any): NormalizedNoun => ({
